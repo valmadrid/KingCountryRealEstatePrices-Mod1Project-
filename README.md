@@ -1,2 +1,4 @@
-# KingCountryRealEstatePrices-Mod1Project-
-First Project at Flatiron School
+# King Country Real Estate Prices 
+## Linear Regression (Module 1) Project
+
+
