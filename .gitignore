@@ -136,3 +136,9 @@ dmypy.json
 
 # html
 *.html
+
+#pickle
+*.pkl
+
+#data
+*.csv
