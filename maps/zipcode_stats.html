@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ef66c84b7b0f4b5cad409862c001a58d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ef66c84b7b0f4b5cad409862c001a58d" ></div>
+        
+</body>
+<script>    
+    
+            var map_ef66c84b7b0f4b5cad409862c001a58d = L.map(
+                "map_ef66c84b7b0f4b5cad409862c001a58d",
+                {
+                    center: [47.6, -122.2],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9.2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6faf1ee74ede4f04af782efde2f8a0bf = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+            var circle_marker_6fc6b9dba51d43e5834207d3a858dac9 = L.circleMarker(
+                [47.49641037, -122.25048065],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.882659446564886, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_f4b88791bb904ed0bc10b33cee7310a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ac19ff57cca4638ae58532f6e362576 = $(`<div id="html_8ac19ff57cca4638ae58532f6e362576" style="width: 100.0%; height: 100.0%;">{'zipcode': 98178, 'zipcode_name': 'Seattle', '# of properties': 262, 'max price': 1700000.0, 'min price': 90000.0, 'mean price': 310613.0, 'mode price': 200000.0, 'median price': 278277.0}</div>`)[0];
+            popup_f4b88791bb904ed0bc10b33cee7310a1.setContent(html_8ac19ff57cca4638ae58532f6e362576);
+        
+
+        circle_marker_6fc6b9dba51d43e5834207d3a858dac9.bindPopup(popup_f4b88791bb904ed0bc10b33cee7310a1)
+        ;
+
+        
+    
+    
+            var circle_marker_d368dc92fb5d429ea5b3a25f32ce91b1 = L.circleMarker(
+                [47.71675873, -122.30219269],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.874109596577017, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_3ae1b07658d04af4aae020324821829f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a2669c81a5c488e9e4c30b4b4bd49c3 = $(`<div id="html_1a2669c81a5c488e9e4c30b4b4bd49c3" style="width: 100.0%; height: 100.0%;">{'zipcode': 98125, 'zipcode_name': 'Seattle', '# of properties': 409, 'max price': 2050000.0, 'min price': 175000.0, 'mean price': 469929.0, 'mode price': 375000.0, 'median price': 425000.0}</div>`)[0];
+            popup_3ae1b07658d04af4aae020324821829f.setContent(html_1a2669c81a5c488e9e4c30b4b4bd49c3);
+        
+
+        circle_marker_d368dc92fb5d429ea5b3a25f32ce91b1.bindPopup(popup_3ae1b07658d04af4aae020324821829f)
+        ;
+
+        
+    
+    
+            var circle_marker_80d42f024c4e464495359b91e661e5c1 = L.circleMarker(
+                [47.75434113, -122.2457962],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.781110865724381, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_d9e3db3c989d432793bae6a8b038e5a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80d0b70ebb6246d88679b4ffb5d138de = $(`<div id="html_80d0b70ebb6246d88679b4ffb5d138de" style="width: 100.0%; height: 100.0%;">{'zipcode': 98028, 'zipcode_name': 'Kenmore', '# of properties': 283, 'max price': 1600000.0, 'min price': 160000.0, 'mean price': 462489.0, 'mode price': 400000.0, 'median price': 445000.0}</div>`)[0];
+            popup_d9e3db3c989d432793bae6a8b038e5a1.setContent(html_80d0b70ebb6246d88679b4ffb5d138de);
+        
+
+        circle_marker_80d42f024c4e464495359b91e661e5c1.bindPopup(popup_d9e3db3c989d432793bae6a8b038e5a1)
+        ;
+
+        
+    
+    
+            var circle_marker_14925673b91444118b898a428c691114 = L.circleMarker(
+                [47.53646851, -122.3924408],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.897106511406843, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_56118c0eb2404e87a33e5926c696ff8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9c901230a6f4cafa03649c15774cf0e = $(`<div id="html_a9c901230a6f4cafa03649c15774cf0e" style="width: 100.0%; height: 100.0%;">{'zipcode': 98136, 'zipcode_name': 'Seattle', '# of properties': 263, 'max price': 2230000.0, 'min price': 200000.0, 'mean price': 551769.0, 'mode price': 400000.0, 'median price': 489950.0}</div>`)[0];
+            popup_56118c0eb2404e87a33e5926c696ff8a.setContent(html_a9c901230a6f4cafa03649c15774cf0e);
+        
+
+        circle_marker_14925673b91444118b898a428c691114.bindPopup(popup_56118c0eb2404e87a33e5926c696ff8a)
+        ;
+
+        
+    
+    
+            var circle_marker_4780f5f696f445f3aa6f02106cbbcef7 = L.circleMarker(
+                [47.62905884, -122.03450012],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.570948044217687, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_2083afdcb25d4eeda3e2131541753261 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6943b4e9d6e48e79fb5e5c29a3934a5 = $(`<div id="html_f6943b4e9d6e48e79fb5e5c29a3934a5" style="width: 100.0%; height: 100.0%;">{'zipcode': 98074, 'zipcode_name': 'Sammamish', '# of properties': 441, 'max price': 3080000.0, 'min price': 280000.0, 'mean price': 685676.0, 'mode price': 550000.0, 'median price': 642000.0}</div>`)[0];
+            popup_2083afdcb25d4eeda3e2131541753261.setContent(html_f6943b4e9d6e48e79fb5e5c29a3934a5);
+        
+
+        circle_marker_4780f5f696f445f3aa6f02106cbbcef7.bindPopup(popup_2083afdcb25d4eeda3e2131541753261)
+        ;
+
+        
+    
+    
+            var circle_marker_d72a551453294bc39b446edcf58565ab = L.circleMarker(
+                [47.65056992, -122.01596069],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.465187934243176, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_d8b1dc99978f489089ed76b003787e22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d1e00bb553c4c078e8b760b9a918508 = $(`<div id="html_2d1e00bb553c4c078e8b760b9a918508" style="width: 100.0%; height: 100.0%;">{'zipcode': 98053, 'zipcode_name': 'Redmond', '# of properties': 403, 'max price': 2280000.0, 'min price': 170000.0, 'mean price': 677215.0, 'mode price': 635000.0, 'median price': 635000.0}</div>`)[0];
+            popup_d8b1dc99978f489089ed76b003787e22.setContent(html_2d1e00bb553c4c078e8b760b9a918508);
+        
+
+        circle_marker_d72a551453294bc39b446edcf58565ab.bindPopup(popup_d8b1dc99978f489089ed76b003787e22)
+        ;
+
+        
+    
+    
+            var circle_marker_0d3f259cb2b34185a5dc3b5d0ef8b5a5 = L.circleMarker(
+                [47.3077507, -122.31434631],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.676390982142857, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_a06e66a226ae4911821cc4d2f02df0e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec1b883483e648d88538103433656bbd = $(`<div id="html_ec1b883483e648d88538103433656bbd" style="width: 100.0%; height: 100.0%;">{'zipcode': 98003, 'zipcode_name': 'Federal Way', '# of properties': 280, 'max price': 950000.0, 'min price': 128000.0, 'mean price': 294111.0, 'mode price': 225000.0, 'median price': 267475.0}</div>`)[0];
+            popup_a06e66a226ae4911821cc4d2f02df0e7.setContent(html_ec1b883483e648d88538103433656bbd);
+        
+
+        circle_marker_0d3f259cb2b34185a5dc3b5d0ef8b5a5.bindPopup(popup_a06e66a226ae4911821cc4d2f02df0e7)
+        ;
+
+        
+    
+    
+            var circle_marker_940b66135a9244a4bf548a0ae6764423 = L.circleMarker(
+                [47.39825058, -122.31224823],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7862092410714285, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_e0f80606ab834d178056e985bbf5e8bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9cabb2a652e94a258e309ed4af0574f3 = $(`<div id="html_9cabb2a652e94a258e309ed4af0574f3" style="width: 100.0%; height: 100.0%;">{'zipcode': 98198, 'zipcode_name': 'Seattle', '# of properties': 280, 'max price': 1350000.0, 'min price': 95000.0, 'mean price': 302897.0, 'mode price': 210000.0, 'median price': 265000.0}</div>`)[0];
+            popup_e0f80606ab834d178056e985bbf5e8bb.setContent(html_9cabb2a652e94a258e309ed4af0574f3);
+        
+
+        circle_marker_940b66135a9244a4bf548a0ae6764423.bindPopup(popup_e0f80606ab834d178056e985bbf5e8bb)
+        ;
+
+        
+    
+    
+            var circle_marker_20ac78250c314744a643d9d1b59acd54 = L.circleMarker(
+                [47.49946976, -122.36367035],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.493703255208334, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_6824ffeda6854d83a6a907c03c7ee921 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b58fd9aa6c0f4fa8b1de7e847752439a = $(`<div id="html_b58fd9aa6c0f4fa8b1de7e847752439a" style="width: 100.0%; height: 100.0%;">{'zipcode': 98146, 'zipcode_name': 'Seattle', '# of properties': 288, 'max price': 1410000.0, 'min price': 82000.0, 'mean price': 359496.0, 'mode price': 210000.0, 'median price': 305000.0}</div>`)[0];
+            popup_6824ffeda6854d83a6a907c03c7ee921.setContent(html_b58fd9aa6c0f4fa8b1de7e847752439a);
+        
+
+        circle_marker_20ac78250c314744a643d9d1b59acd54.bindPopup(popup_6824ffeda6854d83a6a907c03c7ee921)
+        ;
+
+        
+    
+    
+            var circle_marker_51454fc02c39490284a64042562d54d4 = L.circleMarker(
+                [47.40248871, -122.02848053],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.588643548387097, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_53dcafccddf041808fe4fced8a00532b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cebca1b281ce40029f895f6a56d134b3 = $(`<div id="html_cebca1b281ce40029f895f6a56d134b3" style="width: 100.0%; height: 100.0%;">{'zipcode': 98038, 'zipcode_name': 'Maple Valley', '# of properties': 589, 'max price': 1350000.0, 'min price': 110000.0, 'mean price': 367091.0, 'mode price': 275000.0, 'median price': 342000.0}</div>`)[0];
+            popup_53dcafccddf041808fe4fced8a00532b.setContent(html_cebca1b281ce40029f895f6a56d134b3);
+        
+
+        circle_marker_51454fc02c39490284a64042562d54d4.bindPopup(popup_53dcafccddf041808fe4fced8a00532b)
+        ;
+
+        
+    
+    
+            var circle_marker_aef21370b5204f928ff4e0226ce3101b = L.circleMarker(
+                [47.62020874, -122.14724731],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.715675265957447, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_824ddea940274249b4d95ab03920a50b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_628bd80f13584f9ab8c735f619e5e523 = $(`<div id="html_628bd80f13584f9ab8c735f619e5e523" style="width: 100.0%; height: 100.0%;">{'zipcode': 98007, 'zipcode_name': 'Bellevue', '# of properties': 141, 'max price': 1320000.0, 'min price': 295000.0, 'mean price': 617254.0, 'mode price': 450000.0, 'median price': 555000.0}</div>`)[0];
+            popup_824ddea940274249b4d95ab03920a50b.setContent(html_628bd80f13584f9ab8c735f619e5e523);
+        
+
+        circle_marker_aef21370b5204f928ff4e0226ce3101b.bindPopup(popup_824ddea940274249b4d95ab03920a50b)
+        ;
+
+        
+    
+    
+            var circle_marker_3516d2008e034a9784985f51e95ee76c = L.circleMarker(
+                [47.68574905, -122.28704071],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.7493018653516295, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_d336015bb28b4a5da061c76920eddbaa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff4677e3a22241ec95f80474522554b6 = $(`<div id="html_ff4677e3a22241ec95f80474522554b6" style="width: 100.0%; height: 100.0%;">{'zipcode': 98115, 'zipcode_name': 'Seattle', '# of properties': 583, 'max price': 2300000.0, 'min price': 200000.0, 'mean price': 619944.0, 'mode price': 435000.0, 'median price': 567000.0}</div>`)[0];
+            popup_d336015bb28b4a5da061c76920eddbaa.setContent(html_ff4677e3a22241ec95f80474522554b6);
+        
+
+        circle_marker_3516d2008e034a9784985f51e95ee76c.bindPopup(popup_d336015bb28b4a5da061c76920eddbaa)
+        ;
+
+        
+    
+    
+            var circle_marker_5ef96460bc5e4a7c83ebb1827f860ace = L.circleMarker(
+                [47.66490936, -122.38401031],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.238872603383458, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_d5212e4d43694fd19c8e7a9e913642bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f94079f14e14aa3be2702dc2c847e10 = $(`<div id="html_4f94079f14e14aa3be2702dc2c847e10" style="width: 100.0%; height: 100.0%;">{'zipcode': 98107, 'zipcode_name': 'Seattle', '# of properties': 266, 'max price': 2950000.0, 'min price': 290000.0, 'mean price': 579110.0, 'mode price': 500000.0, 'median price': 529950.0}</div>`)[0];
+            popup_d5212e4d43694fd19c8e7a9e913642bf.setContent(html_4f94079f14e14aa3be2702dc2c847e10);
+        
+
+        circle_marker_5ef96460bc5e4a7c83ebb1827f860ace.bindPopup(popup_d5212e4d43694fd19c8e7a9e913642bf)
+        ;
+
+        
+    
+    
+            var circle_marker_98254a3ec90b4042aec0d1fdcaff8d0a = L.circleMarker(
+                [47.55120087, -122.37239838],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.309182556497175, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_497fa7c06eac467f99e9d5c80553de05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90c881b053b744028aad425c8f7c1fb4 = $(`<div id="html_90c881b053b744028aad425c8f7c1fb4" style="width: 100.0%; height: 100.0%;">{'zipcode': 98126, 'zipcode_name': 'Seattle', '# of properties': 354, 'max price': 1090000.0, 'min price': 110000.0, 'mean price': 424735.0, 'mode price': 235000.0, 'median price': 395750.0}</div>`)[0];
+            popup_497fa7c06eac467f99e9d5c80553de05.setContent(html_90c881b053b744028aad425c8f7c1fb4);
+        
+
+        circle_marker_98254a3ec90b4042aec0d1fdcaff8d0a.bindPopup(popup_497fa7c06eac467f99e9d5c80553de05)
+        ;
+
+        
+    
+    
+            var circle_marker_e8c83dde39b84a60a6b47526803ea84a = L.circleMarker(
+                [47.72158051, -121.79904175],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.310188289473684, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_0e08e97b0efc483c9c4a538fadcafa41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5bd4c2394ad0439ca63c1259e6c19b8f = $(`<div id="html_5bd4c2394ad0439ca63c1259e6c19b8f" style="width: 100.0%; height: 100.0%;">{'zipcode': 98019, 'zipcode_name': 'Duvall', '# of properties': 190, 'max price': 1020000.0, 'min price': 119500.0, 'mean price': 424815.0, 'mode price': 325000.0, 'median price': 401250.0}</div>`)[0];
+            popup_0e08e97b0efc483c9c4a538fadcafa41.setContent(html_5bd4c2394ad0439ca63c1259e6c19b8f);
+        
+
+        circle_marker_e8c83dde39b84a60a6b47526803ea84a.bindPopup(popup_0e08e97b0efc483c9c4a538fadcafa41)
+        ;
+
+        
+    
+    
+            var circle_marker_22420b9cb6794311a849f58984fc58af = L.circleMarker(
+                [47.67070007, -122.34294891],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.313109738372093, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_e0916b258e36417193d086af4e2c5c45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f25a156e25a943a9ab00e2f0dae45815 = $(`<div id="html_f25a156e25a943a9ab00e2f0dae45815" style="width: 100.0%; height: 100.0%;">{'zipcode': 98103, 'zipcode_name': 'Seattle', '# of properties': 602, 'max price': 1700000.0, 'min price': 238000.0, 'mean price': 585049.0, 'mode price': 650000.0, 'median price': 550000.0}</div>`)[0];
+            popup_e0916b258e36417193d086af4e2c5c45.setContent(html_f25a156e25a943a9ab00e2f0dae45815);
+        
+
+        circle_marker_22420b9cb6794311a849f58984fc58af.bindPopup(popup_e0916b258e36417193d086af4e2c5c45)
+        ;
+
+        
+    
+    
+            var circle_marker_eba41e51a258443b8c14732028a6b446 = L.circleMarker(
+                [47.31032944, -122.20800018],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.9285504396984923, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_9ba7d38a59664f1c8e562e24d4f9fb4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3738072ab0a147dcb4d8ee141318c579 = $(`<div id="html_3738072ab0a147dcb4d8ee141318c579" style="width: 100.0%; height: 100.0%;">{'zipcode': 98002, 'zipcode_name': 'Auburn', '# of properties': 199, 'max price': 389000.0, 'min price': 95000.0, 'mean price': 234284.0, 'mode price': 250000.0, 'median price': 235000.0}</div>`)[0];
+            popup_9ba7d38a59664f1c8e562e24d4f9fb4a.setContent(html_3738072ab0a147dcb4d8ee141318c579);
+        
+
+        circle_marker_eba41e51a258443b8c14732028a6b446.bindPopup(popup_9ba7d38a59664f1c8e562e24d4f9fb4a)
+        ;
+
+        
+    
+    
+            var circle_marker_b31b98df012245b992fec9937a9b841b = L.circleMarker(
+                [47.73884964, -122.34860229],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.837644878296146, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_76d59952ac6d41f2a171c92f393fa076 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cb62f8af6a349ef8c0b027a431b1c86 = $(`<div id="html_8cb62f8af6a349ef8c0b027a431b1c86" style="width: 100.0%; height: 100.0%;">{'zipcode': 98133, 'zipcode_name': 'Seattle', '# of properties': 493, 'max price': 808100.0, 'min price': 130000.0, 'mean price': 387012.0, 'mode price': 375000.0, 'median price': 375000.0}</div>`)[0];
+            popup_76d59952ac6d41f2a171c92f393fa076.setContent(html_8cb62f8af6a349ef8c0b027a431b1c86);
+        
+
+        circle_marker_b31b98df012245b992fec9937a9b841b.bindPopup(popup_76d59952ac6d41f2a171c92f393fa076)
+        ;
+
+        
+    
+    
+            var circle_marker_6b006b339b33425c8d82901b973e71b6 = L.circleMarker(
+                [47.55792999, -122.21938324],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.935920478723405, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_8036bc2d6b0d4f748f394ae0ecaf3a25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4682014fcac041c6b419315aa13dfc71 = $(`<div id="html_4682014fcac041c6b419315aa13dfc71" style="width: 100.0%; height: 100.0%;">{'zipcode': 98040, 'zipcode_name': 'Mercer Island', '# of properties': 282, 'max price': 5300000.0, 'min price': 500000.0, 'mean price': 1194874.0, 'mode price': 1200000.0, 'median price': 993750.0}</div>`)[0];
+            popup_8036bc2d6b0d4f748f394ae0ecaf3a25.setContent(html_4682014fcac041c6b419315aa13dfc71);
+        
+
+        circle_marker_6b006b339b33425c8d82901b973e71b6.bindPopup(popup_8036bc2d6b0d4f748f394ae0ecaf3a25)
+        ;
+
+        
+    
+    
+            var circle_marker_9f9913b38717410698dc612bdaeb2aa0 = L.circleMarker(
+                [47.28977966, -122.11402893],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.186513283475784, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_9ac6ab0e082e4c68b3c636e1c56f0f0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95bface8d8ec49aaabb10465b86b8ec3 = $(`<div id="html_95bface8d8ec49aaabb10465b86b8ec3" style="width: 100.0%; height: 100.0%;">{'zipcode': 98092, 'zipcode_name': 'Auburn', '# of properties': 351, 'max price': 930000.0, 'min price': 90000.0, 'mean price': 334921.0, 'mode price': 400000.0, 'median price': 309780.0}</div>`)[0];
+            popup_9ac6ab0e082e4c68b3c636e1c56f0f0b.setContent(html_95bface8d8ec49aaabb10465b86b8ec3);
+        
+
+        circle_marker_9f9913b38717410698dc612bdaeb2aa0.bindPopup(popup_9ac6ab0e082e4c68b3c636e1c56f0f0b)
+        ;
+
+        
+    
+    
+            var circle_marker_9104a8571de8433da941bb1c302e64e5 = L.circleMarker(
+                [47.36545181, -122.19817352],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.702349755859375, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_e1db58cdac6940a8ae38357d6f178ae4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7baa86c1529942babebb2f2a07be041a = $(`<div id="html_7baa86c1529942babebb2f2a07be041a" style="width: 100.0%; height: 100.0%;">{'zipcode': 98030, 'zipcode_name': 'Kent', '# of properties': 256, 'max price': 565000.0, 'min price': 120000.0, 'mean price': 296188.0, 'mode price': 245000.0, 'median price': 282255.0}</div>`)[0];
+            popup_e1db58cdac6940a8ae38357d6f178ae4.setContent(html_7baa86c1529942babebb2f2a07be041a);
+        
+
+        circle_marker_9104a8571de8433da941bb1c302e64e5.bindPopup(popup_e1db58cdac6940a8ae38357d6f178ae4)
+        ;
+
+        
+    
+    
+            var circle_marker_825a6f263bdc47daa7f2c46be7e05bbf = L.circleMarker(
+                [47.63830185, -122.36750031],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.621435122282609, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_a0613e81f69849ad96554321630bccb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11f0516bfe0b4c6fabfde279686d209d = $(`<div id="html_11f0516bfe0b4c6fabfde279686d209d" style="width: 100.0%; height: 100.0%;">{'zipcode': 98119, 'zipcode_name': 'Seattle', '# of properties': 184, 'max price': 3070000.0, 'min price': 300523.0, 'mean price': 849715.0, 'mode price': 525000.0, 'median price': 744975.0}</div>`)[0];
+            popup_a0613e81f69849ad96554321630bccb9.setContent(html_11f0516bfe0b4c6fabfde279686d209d);
+        
+
+        circle_marker_825a6f263bdc47daa7f2c46be7e05bbf.bindPopup(popup_a0613e81f69849ad96554321630bccb9)
+        ;
+
+        
+    
+    
+            var circle_marker_47cc4588a8494a9a931344d12a7e3242 = L.circleMarker(
+                [47.62921143, -122.29640198],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.702987592936802, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_b510f721dd8443de8baa9ae0f569e3a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_706565849ba04b8290bbf2f80771edc2 = $(`<div id="html_706565849ba04b8290bbf2f80771edc2" style="width: 100.0%; height: 100.0%;">{'zipcode': 98112, 'zipcode_name': 'Seattle', '# of properties': 269, 'max price': 3400000.0, 'min price': 169317.0, 'mean price': 1096239.0, 'mode price': 1050000.0, 'median price': 915000.0}</div>`)[0];
+            popup_b510f721dd8443de8baa9ae0f569e3a6.setContent(html_706565849ba04b8290bbf2f80771edc2);
+        
+
+        circle_marker_47cc4588a8494a9a931344d12a7e3242.bindPopup(popup_b510f721dd8443de8baa9ae0f569e3a6)
+        ;
+
+        
+    
+    
+            var circle_marker_3357255bbbbd4a13a543337994eea9ad = L.circleMarker(
+                [47.68011856, -122.12319183],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.065552831010454, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_a112a1af88c0415b8928d30939f1a99f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7f0dcd0cb58452a941338416728c78d = $(`<div id="html_b7f0dcd0cb58452a941338416728c78d" style="width: 100.0%; height: 100.0%;">{'zipcode': 98052, 'zipcode_name': 'Redmond', '# of properties': 574, 'max price': 2200000.0, 'min price': 225000.0, 'mean price': 645244.0, 'mode price': 550000.0, 'median price': 615000.0}</div>`)[0];
+            popup_a112a1af88c0415b8928d30939f1a99f.setContent(html_b7f0dcd0cb58452a941338416728c78d);
+        
+
+        circle_marker_3357255bbbbd4a13a543337994eea9ad.bindPopup(popup_a112a1af88c0415b8928d30939f1a99f)
+        ;
+
+        
+    
+    
+            var circle_marker_49b9402ccde144fab8e4fee705e90d10 = L.circleMarker(
+                [47.50999832, -121.98861694],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.713174575242719, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_d7c642b128474b8ab2f3dafcff83af6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a98bc745f384be1bb72db3f98a662e2 = $(`<div id="html_8a98bc745f384be1bb72db3f98a662e2" style="width: 100.0%; height: 100.0%;">{'zipcode': 98027, 'zipcode_name': 'Issaquah', '# of properties': 412, 'max price': 2700000.0, 'min price': 130000.0, 'mean price': 617054.0, 'mode price': 525000.0, 'median price': 570500.0}</div>`)[0];
+            popup_d7c642b128474b8ab2f3dafcff83af6b.setContent(html_8a98bc745f384be1bb72db3f98a662e2);
+        
+
+        circle_marker_49b9402ccde144fab8e4fee705e90d10.bindPopup(popup_d7c642b128474b8ab2f3dafcff83af6b)
+        ;
+
+        
+    
+    
+            var circle_marker_bdcbfd3d05bf402aac903720884a666d = L.circleMarker(
+                [47.68804932, -122.38374329],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.210435103978299, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_862c20adb7ad47d191cebe92e672d804 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f35c7390ea4435abf075b84f0248ce3 = $(`<div id="html_9f35c7390ea4435abf075b84f0248ce3" style="width: 100.0%; height: 100.0%;">{'zipcode': 98117, 'zipcode_name': 'Seattle', '# of properties': 553, 'max price': 1370000.0, 'min price': 125000.0, 'mean price': 576835.0, 'mode price': 575000.0, 'median price': 544000.0}</div>`)[0];
+            popup_862c20adb7ad47d191cebe92e672d804.setContent(html_9f35c7390ea4435abf075b84f0248ce3);
+        
+
+        circle_marker_bdcbfd3d05bf402aac903720884a666d.bindPopup(popup_862c20adb7ad47d191cebe92e672d804)
+        ;
+
+        
+    
+    
+            var circle_marker_6c190a9ca6ac443f9ade41ca89942021 = L.circleMarker(
+                [47.43228149, -122.11914063],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.420238434065935, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_ec7e9bda4030498f945dce531b8e9e61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e2ebc3585b44a3c843614004a7a2849 = $(`<div id="html_5e2ebc3585b44a3c843614004a7a2849" style="width: 100.0%; height: 100.0%;">{'zipcode': 98058, 'zipcode_name': 'Renton', '# of properties': 455, 'max price': 1500000.0, 'min price': 95000.0, 'mean price': 353619.0, 'mode price': 390000.0, 'median price': 335000.0}</div>`)[0];
+            popup_ec7e9bda4030498f945dce531b8e9e61.setContent(html_5e2ebc3585b44a3c843614004a7a2849);
+        
+
+        circle_marker_6c190a9ca6ac443f9ade41ca89942021.bindPopup(popup_ec7e9bda4030498f945dce531b8e9e61)
+        ;
+
+        
+    
+    
+            var circle_marker_bab9c5e4aa5644869ffc96209faa1fa6 = L.circleMarker(
+                [47.30789948, -122.26509857],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5149358725761775, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_91371d7c6b0f43b1b573c311262640f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39c6904d6ae141b2b5f6f844adafe1d3 = $(`<div id="html_39c6904d6ae141b2b5f6f844adafe1d3" style="width: 100.0%; height: 100.0%;">{'zipcode': 98001, 'zipcode_name': 'Auburn', '# of properties': 361, 'max price': 850000.0, 'min price': 100000.0, 'mean price': 281195.0, 'mode price': 250000.0, 'median price': 260000.0}</div>`)[0];
+            popup_91371d7c6b0f43b1b573c311262640f9.setContent(html_39c6904d6ae141b2b5f6f844adafe1d3);
+        
+
+        circle_marker_bab9c5e4aa5644869ffc96209faa1fa6.bindPopup(popup_91371d7c6b0f43b1b573c311262640f9)
+        ;
+
+        
+    
+    
+            var circle_marker_38c2f3fdcdef4a2e9d2bcda429fb36bf = L.circleMarker(
+                [47.51076889, -122.1837616],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.261193442118227, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_4df7e07388e141fe94cab306cf662b40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8893935dc1dd43a38d5a6ebcb573bbcc = $(`<div id="html_8893935dc1dd43a38d5a6ebcb573bbcc" style="width: 100.0%; height: 100.0%;">{'zipcode': 98056, 'zipcode_name': 'Renton', '# of properties': 406, 'max price': 3000000.0, 'min price': 139000.0, 'mean price': 420895.0, 'mode price': 250000.0, 'median price': 380000.0}</div>`)[0];
+            popup_4df7e07388e141fe94cab306cf662b40.setContent(html_8893935dc1dd43a38d5a6ebcb573bbcc);
+        
+
+        circle_marker_38c2f3fdcdef4a2e9d2bcda429fb36bf.bindPopup(popup_4df7e07388e141fe94cab306cf662b40)
+        ;
+
+        
+    
+    
+            var circle_marker_eecfb8feab6b475881eb93d266852cd5 = L.circleMarker(
+                [47.44869995, -122.35655212],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.804029872047244, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_68b56d7324474077a0288576f27f54c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efd4ad75ca264440807fb58346a6c288 = $(`<div id="html_efd4ad75ca264440807fb58346a6c288" style="width: 100.0%; height: 100.0%;">{'zipcode': 98166, 'zipcode_name': 'Seattle', '# of properties': 254, 'max price': 2510000.0, 'min price': 100000.0, 'mean price': 464322.0, 'mode price': 315000.0, 'median price': 390000.0}</div>`)[0];
+            popup_68b56d7324474077a0288576f27f54c4.setContent(html_efd4ad75ca264440807fb58346a6c288);
+        
+
+        circle_marker_eecfb8feab6b475881eb93d266852cd5.bindPopup(popup_68b56d7324474077a0288576f27f54c4)
+        ;
+
+        
+    
+    
+            var circle_marker_7e3ca555f8864582853b26c99b51b967 = L.circleMarker(
+                [47.30294037, -122.37227631],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.584285145290581, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_3d36f9b3d2414ab187c3cbf3a0d88769 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bd8536488124c308453a354869cba6d = $(`<div id="html_1bd8536488124c308453a354869cba6d" style="width: 100.0%; height: 100.0%;">{'zipcode': 98023, 'zipcode_name': 'Federal Way', '# of properties': 499, 'max price': 1280000.0, 'min price': 86500.0, 'mean price': 286743.0, 'mode price': 245000.0, 'median price': 268450.0}</div>`)[0];
+            popup_3d36f9b3d2414ab187c3cbf3a0d88769.setContent(html_1bd8536488124c308453a354869cba6d);
+        
+
+        circle_marker_7e3ca555f8864582853b26c99b51b967.bindPopup(popup_3d36f9b3d2414ab187c3cbf3a0d88769)
+        ;
+
+        
+    
+    
+            var circle_marker_aa87a257cdce47bdabfe79f9fad2d488 = L.circleMarker(
+                [47.41991043, -122.45081329],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.117275213675214, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_db0a173c7cf24675996d3916d285dd48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d90e7d92b8b4a839bc466c5cc085cc6 = $(`<div id="html_1d90e7d92b8b4a839bc466c5cc085cc6" style="width: 100.0%; height: 100.0%;">{'zipcode': 98070, 'zipcode_name': 'Vashon', '# of properties': 117, 'max price': 1380000.0, 'min price': 160000.0, 'mean price': 489382.0, 'mode price': 295000.0, 'median price': 465000.0}</div>`)[0];
+            popup_db0a173c7cf24675996d3916d285dd48.setContent(html_1d90e7d92b8b4a839bc466c5cc085cc6);
+        
+
+        circle_marker_aa87a257cdce47bdabfe79f9fad2d488.bindPopup(popup_db0a173c7cf24675996d3916d285dd48)
+        ;
+
+        
+    
+    
+            var circle_marker_14cd8f0d51304a00820acd94d3a98a51 = L.circleMarker(
+                [47.44644928, -122.32077789],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.561357456140351, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_c11366d79bd344898217b082955f5be2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5874791c7db44bd8c30ca3838631b3d = $(`<div id="html_c5874791c7db44bd8c30ca3838631b3d" style="width: 100.0%; height: 100.0%;">{'zipcode': 98148, 'zipcode_name': 'Seattle', '# of properties': 57, 'max price': 600600.0, 'min price': 105500.0, 'mean price': 284909.0, 'mode price': 295000.0, 'median price': 278000.0}</div>`)[0];
+            popup_c11366d79bd344898217b082955f5be2.setContent(html_c5874791c7db44bd8c30ca3838631b3d);
+        
+
+        circle_marker_14cd8f0d51304a00820acd94d3a98a51.bindPopup(popup_c11366d79bd344898217b082955f5be2)
+        ;
+
+        
+    
+    
+            var circle_marker_3a0cc1526f7f40e6ab8c518ca95328ba = L.circleMarker(
+                [47.65879822, -122.29129028],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.790361790393014, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_7fa73c71a579406ea7c09a68a07c3870 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93ba4cedf2d94f5f9212a35edbb44e71 = $(`<div id="html_93ba4cedf2d94f5f9212a35edbb44e71" style="width: 100.0%; height: 100.0%;">{'zipcode': 98105, 'zipcode_name': 'Seattle', '# of properties': 229, 'max price': 3650000.0, 'min price': 380000.0, 'mean price': 863229.0, 'mode price': 530000.0, 'median price': 675000.0}</div>`)[0];
+            popup_7fa73c71a579406ea7c09a68a07c3870.setContent(html_93ba4cedf2d94f5f9212a35edbb44e71);
+        
+
+        circle_marker_3a0cc1526f7f40e6ab8c518ca95328ba.bindPopup(popup_7fa73c71a579406ea7c09a68a07c3870)
+        ;
+
+        
+    
+    
+            var circle_marker_e8229db9228d45559b34c80ec809071c = L.circleMarker(
+                [47.36402893, -122.09104156],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.894754204753199, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_854845cec6ef4d80ac839fbc2f890296 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_620659e39b134ebca03b2dc3c09c9213 = $(`<div id="html_620659e39b134ebca03b2dc3c09c9213" style="width: 100.0%; height: 100.0%;">{'zipcode': 98042, 'zipcode_name': 'Kent', '# of properties': 547, 'max price': 859000.0, 'min price': 105000.0, 'mean price': 311580.0, 'mode price': 270000.0, 'median price': 291500.0}</div>`)[0];
+            popup_854845cec6ef4d80ac839fbc2f890296.setContent(html_620659e39b134ebca03b2dc3c09c9213);
+        
+
+        circle_marker_e8229db9228d45559b34c80ec809071c.bindPopup(popup_854845cec6ef4d80ac839fbc2f890296)
+        ;
+
+        
+    
+    
+            var circle_marker_130270248acf4494b150b757e7eba95d = L.circleMarker(
+                [47.60634995, -122.10700226],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.070352826855123, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_b7b2c764502f48b7b1f70a13b66bdcd5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8777fd9b85214d8eb746372a28a805d6 = $(`<div id="html_8777fd9b85214d8eb746372a28a805d6" style="width: 100.0%; height: 100.0%;">{'zipcode': 98008, 'zipcode_name': 'Bellevue', '# of properties': 283, 'max price': 3570000.0, 'min price': 250000.0, 'mean price': 645628.0, 'mode price': 480000.0, 'median price': 545000.0}</div>`)[0];
+            popup_b7b2c764502f48b7b1f70a13b66bdcd5.setContent(html_8777fd9b85214d8eb746372a28a805d6);
+        
+
+        circle_marker_130270248acf4494b150b757e7eba95d.bindPopup(popup_b7b2c764502f48b7b1f70a13b66bdcd5)
+        ;
+
+        
+    
+    
+            var circle_marker_22569a8b781f4294b9837d80835525f8 = L.circleMarker(
+                [47.50263977, -122.11213684],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.1703163728632475, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_8893513d25904bfdb99e1d405f65f48b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16f70144a4f74d1b95034baa6e56fdee = $(`<div id="html_16f70144a4f74d1b95034baa6e56fdee" style="width: 100.0%; height: 100.0%;">{'zipcode': 98059, 'zipcode_name': 'Renton', '# of properties': 468, 'max price': 1780000.0, 'min price': 172500.0, 'mean price': 493625.0, 'mode price': 320000.0, 'median price': 435000.0}</div>`)[0];
+            popup_8893513d25904bfdb99e1d405f65f48b.setContent(html_16f70144a4f74d1b95034baa6e56fdee);
+        
+
+        circle_marker_22569a8b781f4294b9837d80835525f8.bindPopup(popup_8893513d25904bfdb99e1d405f65f48b)
+        ;
+
+        
+    
+    
+            var circle_marker_d899f3cd6bd04ef6a02a8545000d7d6a = L.circleMarker(
+                [47.60929871, -122.30445099],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.931976810344828, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_48d8e4d9f7734950b3e831709047245c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6623fedbdb244a485591171ab23fe38 = $(`<div id="html_d6623fedbdb244a485591171ab23fe38" style="width: 100.0%; height: 100.0%;">{'zipcode': 98122, 'zipcode_name': 'Seattle', '# of properties': 290, 'max price': 2050000.0, 'min price': 202000.0, 'mean price': 634558.0, 'mode price': 375000.0, 'median price': 572000.0}</div>`)[0];
+            popup_48d8e4d9f7734950b3e831709047245c.setContent(html_d6623fedbdb244a485591171ab23fe38);
+        
+
+        circle_marker_d899f3cd6bd04ef6a02a8545000d7d6a.bindPopup(popup_48d8e4d9f7734950b3e831709047245c)
+        ;
+
+        
+    
+    
+            var circle_marker_1bbdfe52b0844e4c8d33c20f20465f67 = L.circleMarker(
+                [47.58404922, -122.29897308],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.433831778425656, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_083d2cab771441bfbc7c2da891aa4b6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ecf61b2234f4594bb57f84daf2c9a85 = $(`<div id="html_1ecf61b2234f4594bb57f84daf2c9a85" style="width: 100.0%; height: 100.0%;">{'zipcode': 98144, 'zipcode_name': 'Seattle', '# of properties': 343, 'max price': 3600000.0, 'min price': 181000.0, 'mean price': 594707.0, 'mode price': 450000.0, 'median price': 450000.0}</div>`)[0];
+            popup_083d2cab771441bfbc7c2da891aa4b6c.setContent(html_1ecf61b2234f4594bb57f84daf2c9a85);
+        
+
+        circle_marker_1bbdfe52b0844e4c8d33c20f20465f67.bindPopup(popup_083d2cab771441bfbc7c2da891aa4b6c)
+        ;
+
+        
+    
+    
+            var circle_marker_0b785cd3c5964904a15b76c134761752 = L.circleMarker(
+                [47.61555099, -122.20639801],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.95654988170347, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_32bd49440d784dc4ba3d6b3e6d5f23b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fad7ea1cc7ad46e2b4829508bf5c72ef = $(`<div id="html_fad7ea1cc7ad46e2b4829508bf5c72ef" style="width: 100.0%; height: 100.0%;">{'zipcode': 98004, 'zipcode_name': 'Bellevue', '# of properties': 317, 'max price': 7060000.0, 'min price': 425000.0, 'mean price': 1356524.0, 'mode price': 650000.0, 'median price': 1150000.0}</div>`)[0];
+            popup_32bd49440d784dc4ba3d6b3e6d5f23b0.setContent(html_fad7ea1cc7ad46e2b4829508bf5c72ef);
+        
+
+        circle_marker_0b785cd3c5964904a15b76c134761752.bindPopup(popup_32bd49440d784dc4ba3d6b3e6d5f23b0)
+        ;
+
+        
+    
+    
+            var circle_marker_6a3b610bf8c04881b129b8d51f7af451 = L.circleMarker(
+                [47.62009811, -122.16809845],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.128621205357144, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_c88189371c8543f1bba7179fafbda0f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da0767d2424e4bf28d8d0a26ffd1b8f2 = $(`<div id="html_da0767d2424e4bf28d8d0a26ffd1b8f2" style="width: 100.0%; height: 100.0%;">{'zipcode': 98005, 'zipcode_name': 'Bellevue', '# of properties': 168, 'max price': 1960000.0, 'min price': 400000.0, 'mean price': 810290.0, 'mode price': 530000.0, 'median price': 765475.0}</div>`)[0];
+            popup_c88189371c8543f1bba7179fafbda0f2.setContent(html_da0767d2424e4bf28d8d0a26ffd1b8f2);
+        
+
+        circle_marker_6a3b610bf8c04881b129b8d51f7af451.bindPopup(popup_c88189371c8543f1bba7179fafbda0f2)
+        ;
+
+        
+    
+    
+            var circle_marker_bd3185542fec40159045b0cc05bc83fe = L.circleMarker(
+                [47.71720123, -122.21018982],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.521750183486239, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_34db0fb2c57c454da01c331db3a87387 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26675703642a48ad974fd874e876a888 = $(`<div id="html_26675703642a48ad974fd874e876a888" style="width: 100.0%; height: 100.0%;">{'zipcode': 98034, 'zipcode_name': 'Kirkland', '# of properties': 545, 'max price': 3120000.0, 'min price': 90000.0, 'mean price': 521740.0, 'mode price': 475000.0, 'median price': 445950.0}</div>`)[0];
+            popup_34db0fb2c57c454da01c331db3a87387.setContent(html_26675703642a48ad974fd874e876a888);
+        
+
+        circle_marker_bd3185542fec40159045b0cc05bc83fe.bindPopup(popup_34db0fb2c57c454da01c331db3a87387)
+        ;
+
+        
+    
+    
+            var circle_marker_7920a3dfc9354b0192fcfed3568ac4e1 = L.circleMarker(
+                [47.58734131, -122.0337677],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.884183809192201, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_8d46af5a7f3045329df5bda98b6a740e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e065f9e1dc1a4218923664bd4a103a39 = $(`<div id="html_e065f9e1dc1a4218923664bd4a103a39" style="width: 100.0%; height: 100.0%;">{'zipcode': 98075, 'zipcode_name': 'Sammamish', '# of properties': 359, 'max price': 3200000.0, 'min price': 406430.0, 'mean price': 790735.0, 'mode price': 650000.0, 'median price': 739999.0}</div>`)[0];
+            popup_8d46af5a7f3045329df5bda98b6a740e.setContent(html_e065f9e1dc1a4218923664bd4a103a39);
+        
+
+        circle_marker_7920a3dfc9354b0192fcfed3568ac4e1.bindPopup(popup_8d46af5a7f3045329df5bda98b6a740e)
+        ;
+
+        
+    
+    
+            var circle_marker_a57847225cc3413aa8ba4b99d3851a37 = L.circleMarker(
+                [47.57624817, -122.39763641],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.733688863636364, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_d2b699fa6b78416e8b4bdc8d43de545f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e12d8d42dc3e4e4382a387dc9ffa0041 = $(`<div id="html_e12d8d42dc3e4e4382a387dc9ffa0041" style="width: 100.0%; height: 100.0%;">{'zipcode': 98116, 'zipcode_name': 'Seattle', '# of properties': 330, 'max price': 2050000.0, 'min price': 130000.0, 'mean price': 618695.0, 'mode price': 625000.0, 'median price': 562750.0}</div>`)[0];
+            popup_d2b699fa6b78416e8b4bdc8d43de545f.setContent(html_e12d8d42dc3e4e4382a387dc9ffa0041);
+        
+
+        circle_marker_a57847225cc3413aa8ba4b99d3851a37.bindPopup(popup_d2b699fa6b78416e8b4bdc8d43de545f)
+        ;
+
+        
+    
+    
+            var circle_marker_350adf58d6064a3094003dc963dfa7d2 = L.circleMarker(
+                [47.31275177, -121.98462677],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.295824875, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_092c834e5db542748adcdd54278d2193 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d250eda7b2c84b9f9e9cc4331c186c90 = $(`<div id="html_d250eda7b2c84b9f9e9cc4331c186c90" style="width: 100.0%; height: 100.0%;">{'zipcode': 98010, 'zipcode_name': 'Black Diamond', '# of properties': 100, 'max price': 935000.0, 'min price': 135000.0, 'mean price': 423666.0, 'mode price': 240000.0, 'median price': 360000.0}</div>`)[0];
+            popup_092c834e5db542748adcdd54278d2193.setContent(html_d250eda7b2c84b9f9e9cc4331c186c90);
+        
+
+        circle_marker_350adf58d6064a3094003dc963dfa7d2.bindPopup(popup_092c834e5db542748adcdd54278d2193)
+        ;
+
+        
+    
+    
+            var circle_marker_992a8827bc66410e946098df6bb5cee6 = L.circleMarker(
+                [47.54164886, -122.27020264],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.225242011834319, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_ad0699e712234b4cbd45473e75416b4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_803ebb7255e94ca1b34c01a76906b436 = $(`<div id="html_803ebb7255e94ca1b34c01a76906b436" style="width: 100.0%; height: 100.0%;">{'zipcode': 98118, 'zipcode_name': 'Seattle', '# of properties': 507, 'max price': 2900000.0, 'min price': 109000.0, 'mean price': 418019.0, 'mode price': 350000.0, 'median price': 367500.0}</div>`)[0];
+            popup_ad0699e712234b4cbd45473e75416b4a.setContent(html_803ebb7255e94ca1b34c01a76906b436);
+        
+
+        circle_marker_992a8827bc66410e946098df6bb5cee6.bindPopup(popup_ad0699e712234b4cbd45473e75416b4a)
+        ;
+
+        
+    
+    
+            var circle_marker_5adf8bd13e4d4d4d9b9fb5b198a1b1d9 = L.circleMarker(
+                [47.64915085, -122.40605164],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.902348422712933, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_0684a7798aab40a1a455df4e36b9e24e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e42a411e08e84de79a26a9de8209f47d = $(`<div id="html_e42a411e08e84de79a26a9de8209f47d" style="width: 100.0%; height: 100.0%;">{'zipcode': 98199, 'zipcode_name': 'Seattle', '# of properties': 317, 'max price': 3200000.0, 'min price': 323000.0, 'mean price': 792188.0, 'mode price': 1100000.0, 'median price': 689800.0}</div>`)[0];
+            popup_0684a7798aab40a1a455df4e36b9e24e.setContent(html_e42a411e08e84de79a26a9de8209f47d);
+        
+
+        circle_marker_5adf8bd13e4d4d4d9b9fb5b198a1b1d9.bindPopup(popup_0684a7798aab40a1a455df4e36b9e24e)
+        ;
+
+        
+    
+    
+            var circle_marker_b8147833a57b47f2a9116d9801fc1428 = L.circleMarker(
+                [47.39226913, -122.27220154],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.141203, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_81515d4e6c4c404797a209e5245be9b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5aded3dd935347409bbf7f3e23570a90 = $(`<div id="html_5aded3dd935347409bbf7f3e23570a90" style="width: 100.0%; height: 100.0%;">{'zipcode': 98032, 'zipcode_name': 'Kent', '# of properties': 125, 'max price': 545000.0, 'min price': 85000.0, 'mean price': 251296.0, 'mode price': 240000.0, 'median price': 249000.0}</div>`)[0];
+            popup_81515d4e6c4c404797a209e5245be9b1.setContent(html_5aded3dd935347409bbf7f3e23570a90);
+        
+
+        circle_marker_b8147833a57b47f2a9116d9801fc1428.bindPopup(popup_81515d4e6c4c404797a209e5245be9b1)
+        ;
+
+        
+    
+    
+            var circle_marker_f5870823937b43468423555dd9797a5c = L.circleMarker(
+                [47.46141052, -121.55877686],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.502903920454545, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_f8c36f8e9c074dd7950d724bfe6584d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce947c323d4f4b7b8df71a4a149ab00a = $(`<div id="html_ce947c323d4f4b7b8df71a4a149ab00a" style="width: 100.0%; height: 100.0%;">{'zipcode': 98045, 'zipcode_name': 'North Bend', '# of properties': 220, 'max price': 1950000.0, 'min price': 175000.0, 'mean price': 440232.0, 'mode price': 280000.0, 'median price': 404750.0}</div>`)[0];
+            popup_f8c36f8e9c074dd7950d724bfe6584d0.setContent(html_ce947c323d4f4b7b8df71a4a149ab00a);
+        
+
+        circle_marker_f5870823937b43468423555dd9797a5c.bindPopup(popup_f8c36f8e9c074dd7950d724bfe6584d0)
+        ;
+
+        
+    
+    
+            var circle_marker_b39e3f5836164e3a8eade4e254660754 = L.circleMarker(
+                [47.63539886, -122.323349],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.245095913461538, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_7edee40aecaa442a8900f4f55e827811 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bde4e69178f84e4c8bc818d96cf251b7 = $(`<div id="html_bde4e69178f84e4c8bc818d96cf251b7" style="width: 100.0%; height: 100.0%;">{'zipcode': 98102, 'zipcode_name': 'Seattle', '# of properties': 104, 'max price': 7700000.0, 'min price': 330000.0, 'mean price': 899608.0, 'mode price': 525000.0, 'median price': 710000.0}</div>`)[0];
+            popup_7edee40aecaa442a8900f4f55e827811.setContent(html_bde4e69178f84e4c8bc818d96cf251b7);
+        
+
+        circle_marker_b39e3f5836164e3a8eade4e254660754.bindPopup(popup_7edee40aecaa442a8900f4f55e827811)
+        ;
+
+        
+    
+    
+            var circle_marker_e5d88ce7142843efb4e1bbabcdf3714c = L.circleMarker(
+                [47.75131989, -122.05800629],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.536074873737373, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_529fc68526314ba8be9c43dc3cfbf36d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_905a1d0807b34180a3178edc7c7a87a5 = $(`<div id="html_905a1d0807b34180a3178edc7c7a87a5" style="width: 100.0%; height: 100.0%;">{'zipcode': 98077, 'zipcode_name': 'Woodinville', '# of properties': 198, 'max price': 1920000.0, 'min price': 250000.0, 'mean price': 682886.0, 'mode price': 875000.0, 'median price': 652475.0}</div>`)[0];
+            popup_529fc68526314ba8be9c43dc3cfbf36d.setContent(html_905a1d0807b34180a3178edc7c7a87a5);
+        
+
+        circle_marker_e5d88ce7142843efb4e1bbabcdf3714c.bindPopup(popup_529fc68526314ba8be9c43dc3cfbf36d)
+        ;
+
+        
+    
+    
+            var circle_marker_a98104132ada44e0b45f08e27e58ef26 = L.circleMarker(
+                [47.54069901, -122.31809998],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.445981451612903, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_e0e5e646958f4ca0baa7b4b58cb80ee0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcf5e278a1bd4b8c82ca3a2e8fc11b27 = $(`<div id="html_fcf5e278a1bd4b8c82ca3a2e8fc11b27" style="width: 100.0%; height: 100.0%;">{'zipcode': 98108, 'zipcode_name': 'Seattle', '# of properties': 186, 'max price': 640000.0, 'min price': 90000.0, 'mean price': 355679.0, 'mode price': 300000.0, 'median price': 342500.0}</div>`)[0];
+            popup_e0e5e646958f4ca0baa7b4b58cb80ee0.setContent(html_fcf5e278a1bd4b8c82ca3a2e8fc11b27);
+        
+
+        circle_marker_a98104132ada44e0b45f08e27e58ef26.bindPopup(popup_e0e5e646958f4ca0baa7b4b58cb80ee0)
+        ;
+
+        
+    
+    
+            var circle_marker_a90f9aebb8b1426eb9c9dfe98f2e6694 = L.circleMarker(
+                [47.489151, -122.29284668],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.004104646840149, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_fc35f407182d409ea433d6ed19c1dcfc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3e7b9a0599849ed80955400c0e5d49e = $(`<div id="html_c3e7b9a0599849ed80955400c0e5d49e" style="width: 100.0%; height: 100.0%;">{'zipcode': 98168, 'zipcode_name': 'Seattle', '# of properties': 269, 'max price': 600000.0, 'min price': 78000.0, 'mean price': 240328.0, 'mode price': 235000.0, 'median price': 235000.0}</div>`)[0];
+            popup_fc35f407182d409ea433d6ed19c1dcfc.setContent(html_c3e7b9a0599849ed80955400c0e5d49e);
+        
+
+        circle_marker_a90f9aebb8b1426eb9c9dfe98f2e6694.bindPopup(popup_fc35f407182d409ea433d6ed19c1dcfc)
+        ;
+
+        
+    
+    
+            var circle_marker_2083e5cf4c85426e91dd316b03e4849b = L.circleMarker(
+                [47.73899841, -122.36830902],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.455242401960785, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_fa829e046c9e4074b5d3441218864ae8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7c3541d15554d64b598814133c493be = $(`<div id="html_c7c3541d15554d64b598814133c493be" style="width: 100.0%; height: 100.0%;">{'zipcode': 98177, 'zipcode_name': 'Seattle', '# of properties': 255, 'max price': 3800000.0, 'min price': 245560.0, 'mean price': 676419.0, 'mode price': 380000.0, 'median price': 554000.0}</div>`)[0];
+            popup_fa829e046c9e4074b5d3441218864ae8.setContent(html_c7c3541d15554d64b598814133c493be);
+        
+
+        circle_marker_2083e5cf4c85426e91dd316b03e4849b.bindPopup(popup_fa829e046c9e4074b5d3441218864ae8)
+        ;
+
+        
+    
+    
+            var circle_marker_a205fa212bcc4e62b09d395e3a0a1d7a = L.circleMarker(
+                [47.57413101, -121.77866364],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.620372280844156, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_49a92c48f65744c9908d731f4098c916 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d43fd102b52c43acad86a66ebede65f9 = $(`<div id="html_d43fd102b52c43acad86a66ebede65f9" style="width: 100.0%; height: 100.0%;">{'zipcode': 98065, 'zipcode_name': 'Snoqualmie', '# of properties': 308, 'max price': 2000000.0, 'min price': 170000.0, 'mean price': 529630.0, 'mode price': 425000.0, 'median price': 502500.0}</div>`)[0];
+            popup_49a92c48f65744c9908d731f4098c916.setContent(html_d43fd102b52c43acad86a66ebede65f9);
+        
+
+        circle_marker_a205fa212bcc4e62b09d395e3a0a1d7a.bindPopup(popup_49a92c48f65744c9908d731f4098c916)
+        ;
+
+        
+    
+    
+            var circle_marker_bebee2beffe64a848dcdcffe50bf7a52 = L.circleMarker(
+                [47.54701996, -121.98195648],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.658034228971963, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_98c1d467ae6145b1a79966e8a63f982c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_883a7f1cd3f34317b5eb2330eeb4f6aa = $(`<div id="html_883a7f1cd3f34317b5eb2330eeb4f6aa" style="width: 100.0%; height: 100.0%;">{'zipcode': 98029, 'zipcode_name': 'Issaquah', '# of properties': 321, 'max price': 2200000.0, 'min price': 285000.0, 'mean price': 612643.0, 'mode price': 690000.0, 'median price': 575000.0}</div>`)[0];
+            popup_98c1d467ae6145b1a79966e8a63f982c.setContent(html_883a7f1cd3f34317b5eb2330eeb4f6aa);
+        
+
+        circle_marker_bebee2beffe64a848dcdcffe50bf7a52.bindPopup(popup_98c1d467ae6145b1a79966e8a63f982c)
+        ;
+
+        
+    
+    
+            var circle_marker_b7956ff4d90c438bbf9f00dc86c54b8e = L.circleMarker(
+                [47.55295181, -122.14945221],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.749231927710843, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_d9cd4ec7b7764be2a0b06c0dbc7326eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_389d05aba13b4195a6d3560a3a834faf = $(`<div id="html_389d05aba13b4195a6d3560a3a834faf" style="width: 100.0%; height: 100.0%;">{'zipcode': 98006, 'zipcode_name': 'Bellevue', '# of properties': 498, 'max price': 4210000.0, 'min price': 247500.0, 'mean price': 859939.0, 'mode price': 550000.0, 'median price': 760184.0}</div>`)[0];
+            popup_d9cd4ec7b7764be2a0b06c0dbc7326eb.setContent(html_389d05aba13b4195a6d3560a3a834faf);
+        
+
+        circle_marker_b7956ff4d90c438bbf9f00dc86c54b8e.bindPopup(popup_d9cd4ec7b7764be2a0b06c0dbc7326eb)
+        ;
+
+        
+    
+    
+            var circle_marker_c8b6dca95af44699ba17bedd5a22a8ac = L.circleMarker(
+                [47.63404846, -122.34210205],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.000971903669726, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_91df67bab68c4661b803707137a9a707 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6625bc0c8a645db868f1af9f3ccaf70 = $(`<div id="html_a6625bc0c8a645db868f1af9f3ccaf70" style="width: 100.0%; height: 100.0%;">{'zipcode': 98109, 'zipcode_name': 'Seattle', '# of properties': 109, 'max price': 3200000.0, 'min price': 216650.0, 'mean price': 880078.0, 'mode price': 550000.0, 'median price': 736000.0}</div>`)[0];
+            popup_91df67bab68c4661b803707137a9a707.setContent(html_a6625bc0c8a645db868f1af9f3ccaf70);
+        
+
+        circle_marker_c8b6dca95af44699ba17bedd5a22a8ac.bindPopup(popup_91df67bab68c4661b803707137a9a707)
+        ;
+
+        
+    
+    
+            var circle_marker_293b159c6e2b4b51964e2fc2d48f4a78 = L.circleMarker(
+                [47.08570862, -121.50550842],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.9592798819742487, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_4f5d63bd623d4a7dbb738ade7c269ec5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_808b849cc0b84acca496c8590568f424 = $(`<div id="html_808b849cc0b84acca496c8590568f424" style="width: 100.0%; height: 100.0%;">{'zipcode': 98022, 'zipcode_name': 'Enumclaw', '# of properties': 233, 'max price': 858000.0, 'min price': 122000.0, 'mean price': 316742.0, 'mode price': 245000.0, 'median price': 280000.0}</div>`)[0];
+            popup_4f5d63bd623d4a7dbb738ade7c269ec5.setContent(html_808b849cc0b84acca496c8590568f424);
+        
+
+        circle_marker_293b159c6e2b4b51964e2fc2d48f4a78.bindPopup(popup_4f5d63bd623d4a7dbb738ade7c269ec5)
+        ;
+
+        
+    
+    
+            var circle_marker_073305b0805748c4b0322272bfd01a29 = L.circleMarker(
+                [47.67340851, -122.19297028],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.049885243055556, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_fbfcb26c13ce47e886fe5119d22aad9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d58e350053b3438897a01c22e388897f = $(`<div id="html_d58e350053b3438897a01c22e388897f" style="width: 100.0%; height: 100.0%;">{'zipcode': 98033, 'zipcode_name': 'Kirkland', '# of properties': 432, 'max price': 5110000.0, 'min price': 130000.0, 'mean price': 803991.0, 'mode price': 450000.0, 'median price': 678350.0}</div>`)[0];
+            popup_fbfcb26c13ce47e886fe5119d22aad9f.setContent(html_d58e350053b3438897a01c22e388897f);
+        
+
+        circle_marker_073305b0805748c4b0322272bfd01a29.bindPopup(popup_fbfcb26c13ce47e886fe5119d22aad9f)
+        ;
+
+        
+    
+    
+            var circle_marker_4fc6fb74ebb345e691cba1e49f0154e4 = L.circleMarker(
+                [47.75374985, -122.30101776],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.296711322869955, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_be1d44c53cf1468f870ec0a94d2a2b56 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d51f9281d58a4df2b49cc91c93348d8a = $(`<div id="html_d51f9281d58a4df2b49cc91c93348d8a" style="width: 100.0%; height: 100.0%;">{'zipcode': 98155, 'zipcode_name': 'Seattle', '# of properties': 446, 'max price': 4500000.0, 'min price': 153000.0, 'mean price': 423737.0, 'mode price': 350000.0, 'median price': 375000.0}</div>`)[0];
+            popup_be1d44c53cf1468f870ec0a94d2a2b56.setContent(html_d51f9281d58a4df2b49cc91c93348d8a);
+        
+
+        circle_marker_4fc6fb74ebb345e691cba1e49f0154e4.bindPopup(popup_be1d44c53cf1468f870ec0a94d2a2b56)
+        ;
+
+        
+    
+    
+            var circle_marker_5e3de56eab964a4888d7e4288c074e59 = L.circleMarker(
+                [47.61206055, -121.83133698],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.3265109375, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_9d4fe280db27494682fa9b016a59202e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1cc9612bb8cd40eeabaa99465f0d8de5 = $(`<div id="html_1cc9612bb8cd40eeabaa99465f0d8de5" style="width: 100.0%; height: 100.0%;">{'zipcode': 98024, 'zipcode_name': 'Fall City', '# of properties': 80, 'max price': 1860000.0, 'min price': 200000.0, 'mean price': 586121.0, 'mode price': 275000.0, 'median price': 462500.0}</div>`)[0];
+            popup_9d4fe280db27494682fa9b016a59202e.setContent(html_1cc9612bb8cd40eeabaa99465f0d8de5);
+        
+
+        circle_marker_5e3de56eab964a4888d7e4288c074e59.bindPopup(popup_9d4fe280db27494682fa9b016a59202e)
+        ;
+
+        
+    
+    
+            var circle_marker_647989a0546543c2817734ea729d3278 = L.circleMarker(
+                [47.74932098, -122.21305084],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.129713846153846, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_08e3da0eb2834cd69638f8e63c93cf52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c0fef69ae5d4a3ebe3db1ab4156132a = $(`<div id="html_3c0fef69ae5d4a3ebe3db1ab4156132a" style="width: 100.0%; height: 100.0%;">{'zipcode': 98011, 'zipcode_name': 'Bothell', '# of properties': 195, 'max price': 1080000.0, 'min price': 245500.0, 'mean price': 490377.0, 'mode price': 435000.0, 'median price': 470000.0}</div>`)[0];
+            popup_08e3da0eb2834cd69638f8e63c93cf52.setContent(html_3c0fef69ae5d4a3ebe3db1ab4156132a);
+        
+
+        circle_marker_647989a0546543c2817734ea729d3278.bindPopup(popup_08e3da0eb2834cd69638f8e63c93cf52)
+        ;
+
+        
+    
+    
+            var circle_marker_e7cfd4c1856648c7bb9a555d9aed8033 = L.circleMarker(
+                [47.41394043, -122.19761658],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.754255036630037, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_da2b133fdff04764952acb1ae09ccc0d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acd1e204813741d3a3a7a080baa56f3d = $(`<div id="html_acd1e204813741d3a3a7a080baa56f3d" style="width: 100.0%; height: 100.0%;">{'zipcode': 98031, 'zipcode_name': 'Kent', '# of properties': 273, 'max price': 800000.0, 'min price': 147500.0, 'mean price': 300340.0, 'mode price': 250000.0, 'median price': 288000.0}</div>`)[0];
+            popup_da2b133fdff04764952acb1ae09ccc0d.setContent(html_acd1e204813741d3a3a7a080baa56f3d);
+        
+
+        circle_marker_e7cfd4c1856648c7bb9a555d9aed8033.bindPopup(popup_da2b133fdff04764952acb1ae09ccc0d)
+        ;
+
+        
+    
+    
+            var circle_marker_6eac62363c7d4ceb90e5654a5aa09778 = L.circleMarker(
+                [47.54795074, -122.35125732],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.994767425373134, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_05136efa621041ca874d69164cec4512 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87089adc23cc4c119d5432af669e5e4e = $(`<div id="html_87089adc23cc4c119d5432af669e5e4e" style="width: 100.0%; height: 100.0%;">{'zipcode': 98106, 'zipcode_name': 'Seattle', '# of properties': 335, 'max price': 795000.0, 'min price': 90000.0, 'mean price': 319581.0, 'mode price': 325000.0, 'median price': 315000.0}</div>`)[0];
+            popup_05136efa621041ca874d69164cec4512.setContent(html_87089adc23cc4c119d5432af669e5e4e);
+        
+
+        circle_marker_6eac62363c7d4ceb90e5654a5aa09778.bindPopup(popup_05136efa621041ca874d69164cec4512)
+        ;
+
+        
+    
+    
+            var circle_marker_34c0d602dcb140f99e5fc59b2de7cb6a = L.circleMarker(
+                [47.7580986, -122.12975311],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.125919001831502, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_3f0938b09f934582b1d6739356d09f8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52a9c67a015a456fa365af070abe54d9 = $(`<div id="html_52a9c67a015a456fa365af070abe54d9" style="width: 100.0%; height: 100.0%;">{'zipcode': 98072, 'zipcode_name': 'Woodinville', '# of properties': 273, 'max price': 1570000.0, 'min price': 200000.0, 'mean price': 570074.0, 'mode price': 375000.0, 'median price': 515000.0}</div>`)[0];
+            popup_3f0938b09f934582b1d6739356d09f8b.setContent(html_52a9c67a015a456fa365af070abe54d9);
+        
+
+        circle_marker_34c0d602dcb140f99e5fc59b2de7cb6a.bindPopup(popup_3f0938b09f934582b1d6739356d09f8b)
+        ;
+
+        
+    
+    
+            var circle_marker_f3eda6a7a7de41668332296f27817eb6 = L.circleMarker(
+                [47.44855118, -122.27484894],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6134793198529414, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_5cefb2604efb446f9286914aecab7cb5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e2d7060db0a412d9f4c8c51575a9d59 = $(`<div id="html_1e2d7060db0a412d9f4c8c51575a9d59" style="width: 100.0%; height: 100.0%;">{'zipcode': 98188, 'zipcode_name': 'Seattle', '# of properties': 136, 'max price': 707000.0, 'min price': 110000.0, 'mean price': 289078.0, 'mode price': 240000.0, 'median price': 264000.0}</div>`)[0];
+            popup_5cefb2604efb446f9286914aecab7cb5.setContent(html_1e2d7060db0a412d9f4c8c51575a9d59);
+        
+
+        circle_marker_f3eda6a7a7de41668332296f27817eb6.bindPopup(popup_5cefb2604efb446f9286914aecab7cb5)
+        ;
+
+        
+    
+    
+            var circle_marker_b401054237b54eeabc5f35c893ad9e2f = L.circleMarker(
+                [47.6432991, -121.9082489],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.695213911290323, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_a527da7f7c8846f08673693e449a1a91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e51c97c7d4eb4fd198d77dc3eacf3f10 = $(`<div id="html_e51c97c7d4eb4fd198d77dc3eacf3f10" style="width: 100.0%; height: 100.0%;">{'zipcode': 98014, 'zipcode_name': 'Carnation', '# of properties': 124, 'max price': 1680000.0, 'min price': 80000.0, 'mean price': 455617.0, 'mode price': 150000.0, 'median price': 415000.0}</div>`)[0];
+            popup_a527da7f7c8846f08673693e449a1a91.setContent(html_e51c97c7d4eb4fd198d77dc3eacf3f10);
+        
+
+        circle_marker_b401054237b54eeabc5f35c893ad9e2f.bindPopup(popup_a527da7f7c8846f08673693e449a1a91)
+        ;
+
+        
+    
+    
+            var circle_marker_609f0aa04c0144858f4388209bc3d1bb = L.circleMarker(
+                [47.46377945, -122.21248627],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.80327635261194, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_9a5175672f784a2aa4503009aa0a760e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5e966e9bd88461f853c68e9c00791cd = $(`<div id="html_d5e966e9bd88461f853c68e9c00791cd" style="width: 100.0%; height: 100.0%;">{'zipcode': 98055, 'zipcode_name': 'Renton', '# of properties': 268, 'max price': 631000.0, 'min price': 100000.0, 'mean price': 304262.0, 'mode price': 290000.0, 'median price': 294950.0}</div>`)[0];
+            popup_9a5175672f784a2aa4503009aa0a760e.setContent(html_d5e966e9bd88461f853c68e9c00791cd);
+        
+
+        circle_marker_609f0aa04c0144858f4388209bc3d1bb.bindPopup(popup_9a5175672f784a2aa4503009aa0a760e)
+        ;
+
+        
+    
+    
+            var circle_marker_e89daf20129e4719b44533465fb2be27 = L.circleMarker(
+                [47.6271019, -122.23061371],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.01625, "stroke": true, "weight": 3}
+            ).addTo(map_ef66c84b7b0f4b5cad409862c001a58d);
+        
+    
+        var popup_996ab70ae0f84ab7862e6a9b1b38f38b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0673c4482ae4ee38805046cc340b7fb = $(`<div id="html_c0673c4482ae4ee38805046cc340b7fb" style="width: 100.0%; height: 100.0%;">{'zipcode': 98039, 'zipcode_name': 'Medina', '# of properties': 50, 'max price': 6890000.0, 'min price': 787500.0, 'mean price': 2161300.0, 'mode price': 1880000.0, 'median price': 1895000.0}</div>`)[0];
+            popup_996ab70ae0f84ab7862e6a9b1b38f38b.setContent(html_c0673c4482ae4ee38805046cc340b7fb);
+        
+
+        circle_marker_e89daf20129e4719b44533465fb2be27.bindPopup(popup_996ab70ae0f84ab7862e6a9b1b38f38b)
+        ;
+
+        
+    
+</script>
