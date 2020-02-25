@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5111b0553d754653a4feddc107fbd8cb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5111b0553d754653a4feddc107fbd8cb" ></div>
+        
+</body>
+<script>    
+    
+            var map_5111b0553d754653a4feddc107fbd8cb = L.map(
+                "map_5111b0553d754653a4feddc107fbd8cb",
+                {
+                    center: [47.6, -122.2],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9.2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_03db8f20af514a748ce2970b1d4ee895 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5111b0553d754653a4feddc107fbd8cb);
+        
+    
+            var circle_marker_135797e9777c4c5e9142ab97277e22e6 = L.circleMarker(
+                [47.2313, -122.023],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.51359, "stroke": true, "weight": 3}
+            ).addTo(map_5111b0553d754653a4feddc107fbd8cb);
+        
+    
+        var popup_187b0027bf1e4d7597ccdf16d43e5f89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca0ce56e6d63406889c81c9dcd0c2b20 = $(`<div id="html_ca0ce56e6d63406889c81c9dcd0c2b20" style="width: 100.0%; height: 100.0%;">{'id': 1020069017, 'zipcode': 98022, 'city': 'Enumclaw', 'lot area': 1651359, 'floor area': 1300, 'price': 700000.0}</div>`)[0];
+            popup_187b0027bf1e4d7597ccdf16d43e5f89.setContent(html_ca0ce56e6d63406889c81c9dcd0c2b20);
+        
+
+        circle_marker_135797e9777c4c5e9142ab97277e22e6.bindPopup(popup_187b0027bf1e4d7597ccdf16d43e5f89)
+        ;
+
+        
+    
+    
+            var circle_marker_98dea29c05de4e1788aae3918400a987 = L.circleMarker(
+                [47.6888, -121.90899999999999],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.64794, "stroke": true, "weight": 3}
+            ).addTo(map_5111b0553d754653a4feddc107fbd8cb);
+        
+    
+        var popup_5a7189a3a8d84fada6f98be136bf1bdf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a20d30125934a50bc2a38c8cc0446a0 = $(`<div id="html_7a20d30125934a50bc2a38c8cc0446a0" style="width: 100.0%; height: 100.0%;">{'id': 3326079016, 'zipcode': 98014, 'city': 'Carnation', 'lot area': 1164794, 'floor area': 710, 'price': 190000.0}</div>`)[0];
+            popup_5a7189a3a8d84fada6f98be136bf1bdf.setContent(html_7a20d30125934a50bc2a38c8cc0446a0);
+        
+
+        circle_marker_98dea29c05de4e1788aae3918400a987.bindPopup(popup_5a7189a3a8d84fada6f98be136bf1bdf)
+        ;
+
+        
+    
+    
+            var circle_marker_112ab4b6b80b46c9bf7b37b92a3e7763 = L.circleMarker(
+                [47.4564, -122.00399999999999],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.74218, "stroke": true, "weight": 3}
+            ).addTo(map_5111b0553d754653a4feddc107fbd8cb);
+        
+    
+        var popup_13727551f94e45c29706e8819597e78c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de947a20ccfd40b283ca0dc5e50cacb4 = $(`<div id="html_de947a20ccfd40b283ca0dc5e50cacb4" style="width: 100.0%; height: 100.0%;">{'id': 2623069031, 'zipcode': 98027, 'city': 'Issaquah', 'lot area': 1074218, 'floor area': 3010, 'price': 542500.0}</div>`)[0];
+            popup_13727551f94e45c29706e8819597e78c.setContent(html_de947a20ccfd40b283ca0dc5e50cacb4);
+        
+
+        circle_marker_112ab4b6b80b46c9bf7b37b92a3e7763.bindPopup(popup_13727551f94e45c29706e8819597e78c)
+        ;
+
+        
+    
+    
+            var circle_marker_f5379eb1af70456e8705b645720c28db = L.circleMarker(
+                [47.4619, -121.744],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.24068, "stroke": true, "weight": 3}
+            ).addTo(map_5111b0553d754653a4feddc107fbd8cb);
+        
+    
+        var popup_8df78b56fb454565ad864a8f895d5290 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f6d5150dbcc443fb26c272097d96fe3 = $(`<div id="html_5f6d5150dbcc443fb26c272097d96fe3" style="width: 100.0%; height: 100.0%;">{'id': 2323089009, 'zipcode': 98045, 'city': 'North Bend', 'lot area': 1024068, 'floor area': 4030, 'price': 855000.0}</div>`)[0];
+            popup_8df78b56fb454565ad864a8f895d5290.setContent(html_5f6d5150dbcc443fb26c272097d96fe3);
+        
+
+        circle_marker_f5379eb1af70456e8705b645720c28db.bindPopup(popup_8df78b56fb454565ad864a8f895d5290)
+        ;
+
+        
+    
+    
+            var circle_marker_712c23a310024180913a8567a3915405 = L.circleMarker(
+                [47.413999999999994, -122.087],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.82998, "stroke": true, "weight": 3}
+            ).addTo(map_5111b0553d754653a4feddc107fbd8cb);
+        
+    
+        var popup_9380cc7b9bee449ea29d5f53b750a19d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea597480e4d24d14a085f01bc779a5f9 = $(`<div id="html_ea597480e4d24d14a085f01bc779a5f9" style="width: 100.0%; height: 100.0%;">{'id': 722069232, 'zipcode': 98058, 'city': 'Renton', 'lot area': 982998, 'floor area': 3770, 'price': 998000.0}</div>`)[0];
+            popup_9380cc7b9bee449ea29d5f53b750a19d.setContent(html_ea597480e4d24d14a085f01bc779a5f9);
+        
+
+        circle_marker_712c23a310024180913a8567a3915405.bindPopup(popup_9380cc7b9bee449ea29d5f53b750a19d)
+        ;
+
+        
+    
+    
+            var circle_marker_eebf6cb63c8348419a60277376b0e718 = L.circleMarker(
+                [47.6955, -121.861],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.82278, "stroke": true, "weight": 3}
+            ).addTo(map_5111b0553d754653a4feddc107fbd8cb);
+        
+    
+        var popup_639ecdd21667403c89902238108944ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_150f58264e474ea1a111228e23517cd1 = $(`<div id="html_150f58264e474ea1a111228e23517cd1" style="width: 100.0%; height: 100.0%;">{'id': 3626079040, 'zipcode': 98014, 'city': 'Carnation', 'lot area': 982278, 'floor area': 2560, 'price': 790000.0}</div>`)[0];
+            popup_639ecdd21667403c89902238108944ce.setContent(html_150f58264e474ea1a111228e23517cd1);
+        
+
+        circle_marker_eebf6cb63c8348419a60277376b0e718.bindPopup(popup_639ecdd21667403c89902238108944ce)
+        ;
+
+        
+    
+    
+            var circle_marker_a5140ba5a9b44fb2ad0b83c4037313e6 = L.circleMarker(
+                [47.5371, -121.756],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.20423, "stroke": true, "weight": 3}
+            ).addTo(map_5111b0553d754653a4feddc107fbd8cb);
+        
+    
+        var popup_ede20452aac14ebc8a3572d5a6577308 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dfe9c7ad34e54dee9006f66ce1eaf29c = $(`<div id="html_dfe9c7ad34e54dee9006f66ce1eaf29c" style="width: 100.0%; height: 100.0%;">{'id': 2624089007, 'zipcode': 98065, 'city': 'Snoqualmie', 'lot area': 920423, 'floor area': 3900, 'price': 2000000.0}</div>`)[0];
+            popup_ede20452aac14ebc8a3572d5a6577308.setContent(html_dfe9c7ad34e54dee9006f66ce1eaf29c);
+        
+
+        circle_marker_a5140ba5a9b44fb2ad0b83c4037313e6.bindPopup(popup_ede20452aac14ebc8a3572d5a6577308)
+        ;
+
+        
+    
+    
+            var circle_marker_2cfbb73d68424320a465c8a63cb9efed = L.circleMarker(
+                [47.5385, -121.896],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.81654, "stroke": true, "weight": 3}
+            ).addTo(map_5111b0553d754653a4feddc107fbd8cb);
+        
+    
+        var popup_8445fd82e8944121a82d0b543f53beb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bec80f702a4f466f9d68e5b2808cec3e = $(`<div id="html_bec80f702a4f466f9d68e5b2808cec3e" style="width: 100.0%; height: 100.0%;">{'id': 2724079090, 'zipcode': 98024, 'city': 'Fall City', 'lot area': 881654, 'floor area': 3920, 'price': 1650000.0}</div>`)[0];
+            popup_8445fd82e8944121a82d0b543f53beb6.setContent(html_bec80f702a4f466f9d68e5b2808cec3e);
+        
+
+        circle_marker_2cfbb73d68424320a465c8a63cb9efed.bindPopup(popup_8445fd82e8944121a82d0b543f53beb6)
+        ;
+
+        
+    
+    
+            var circle_marker_de322b92e5564574b7db932199b58938 = L.circleMarker(
+                [47.663999999999994, -121.87799999999999],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.712, "stroke": true, "weight": 3}
+            ).addTo(map_5111b0553d754653a4feddc107fbd8cb);
+        
+    
+        var popup_ba87fa90af444f00858c5a9b77bf3ef0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_302cf64997f246e29a9c4b0c02388a9f = $(`<div id="html_302cf64997f246e29a9c4b0c02388a9f" style="width: 100.0%; height: 100.0%;">{'id': 1125079111, 'zipcode': 98014, 'city': 'Carnation', 'lot area': 871200, 'floor area': 6530, 'price': 1600000.0}</div>`)[0];
+            popup_ba87fa90af444f00858c5a9b77bf3ef0.setContent(html_302cf64997f246e29a9c4b0c02388a9f);
+        
+
+        circle_marker_de322b92e5564574b7db932199b58938.bindPopup(popup_ba87fa90af444f00858c5a9b77bf3ef0)
+        ;
+
+        
+    
+    
+            var circle_marker_f20cf1b1a80e4668b5eb8cc784196d83 = L.circleMarker(
+                [47.676, -121.882],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.712, "stroke": true, "weight": 3}
+            ).addTo(map_5111b0553d754653a4feddc107fbd8cb);
+        
+    
+        var popup_1b00d1c9ed1c4bbeafb0962b9945117c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f31727cbaa44c04a118492c4fd163a1 = $(`<div id="html_6f31727cbaa44c04a118492c4fd163a1" style="width: 100.0%; height: 100.0%;">{'id': 225079036, 'zipcode': 98014, 'city': 'Carnation', 'lot area': 871200, 'floor area': 5545, 'price': 937500.0}</div>`)[0];
+            popup_1b00d1c9ed1c4bbeafb0962b9945117c.setContent(html_6f31727cbaa44c04a118492c4fd163a1);
+        
+
+        circle_marker_f20cf1b1a80e4668b5eb8cc784196d83.bindPopup(popup_1b00d1c9ed1c4bbeafb0962b9945117c)
+        ;
+
+        
+    
+</script>
