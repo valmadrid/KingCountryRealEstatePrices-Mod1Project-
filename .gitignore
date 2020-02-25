@@ -134,9 +134,6 @@ dmypy.json
 *.jpg
 *.png
 
-# html
-*.html
-
 #pickle
 *.pkl
 
