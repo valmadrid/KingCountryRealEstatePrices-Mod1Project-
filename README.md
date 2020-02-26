@@ -1,8 +1,9 @@
+Status: WIP
 
 # King Country Real Estate Prices 
 ## Regression (Module 1) Project
 
-<img src="https://www.seattlemag.com/sites/default/files/field/image/0517_Home2ariel.jpg" />
+<center><img src="https://www.seattlemag.com/sites/default/files/field/image/0517_Home2ariel.jpg" height=500x width=1000x /></center>
 
 ## Summary
 
@@ -18,9 +19,7 @@ The average price per square foot of the 15 closest neighbours of lot and improv
 
 **Lot Type**
 
-A categorical variable, giving us a further description of the location of the house. It's important to know if a house is on a cul-de-sac, on a main road, on a corner lot, on the perimeter of a prime subdivision or on a T-Lot (in some culture, this is bad luck).
-
-**Restrictions or Encumberances**
+**Restrictions and Encumbrances**
 
 A categorical variable that will tell whether the property has a clean title. Buyer and real estate agents should be aware of the limitations and threats to property ownership. These will reduce the price and make it less marketable.
 
@@ -34,3 +33,7 @@ A categorical variable that will tell whether the property has a clean title. Bu
 Grace Valmadrid
 
 Tom Ribaroff
+
+## Credit
+
+Image by <a href="https://www.coldwellbanker.com">Coldwell Banker</a> 
