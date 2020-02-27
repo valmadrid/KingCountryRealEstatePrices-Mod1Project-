@@ -11,7 +11,7 @@ The main goal of this project is to build a regression model to predict the pric
 
 ## Dataset
 
-Dataset<sup>1</sup> consists of 21,597 properties across 24 cities in King County sold between 2014 and 2015:
+Dataset<sup>(1)</sup> consists of 21,597 properties across 24 cities in King County sold between 2014 and 2015:
 * **id** - unique identifier for the property
 * **date** - date property was sold
 * **price** - property selling price
@@ -60,14 +60,18 @@ Z-score was use to tackle outliers.  All datapoints with absolute z-score of mor
 
 ### Modeling
 
-Three techniques were used to select 3 features for the model:
+Three techniques were used to select 3 features:
 1. Highest correlation coefficient (multicollinearity removed)
 2. Recursive Feature Elimination (Scikit Learn)
 3. Select From Model (Scikit Learn)
 
 Interactions and polynomial features were also introduced.
 
-|sd|
+| Features | R<sup>2</sup> | MSE |
+|------------------------------------------|--------------|--------------|
+|linear: grade, lat_log, bedrooms|0.6218|0.0160|
+|interaction: sqft_living_log\*grade, lat_log\*yr_sold_log, floors\*condition|0.6610|0.0144|
+|polynomial: grade<sup>2</sup>, lat_log<sup>2</sup>, bedrooms<sup>2</sup>|0.6204|0.0161|
 
 ## Important libraries used
 * Scikit Learn
