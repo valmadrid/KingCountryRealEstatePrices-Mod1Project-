@@ -1,13 +1,13 @@
-Status: WIP
-
 # King Country Real Estate Prices 
 ## Regression (Module 1) Project
 
 <center><img src="https://www.seattlemag.com/sites/default/files/field/image/0517_Home2ariel.jpg" height=500x width=1000x /></center>
-
+ 
 ## Objective 
 
 The main goal of this project is to build a regression model to predict the price of the King County properties.  Final model should have at most 3 features with p-values less than 0.05. 
+
+Topics covered: Pandas, Data Visualisation, Regression, Interactions & Polynomial Features
 
 ## Dataset
 
@@ -22,8 +22,8 @@ Dataset<sup>(1)</sup> consists of 21,597 properties across 24 cities in King Cou
 * **floors** - number of floor levels
 * **waterfront** - 1 has waterfront access, 0 none
 * **view** - grade corresponding to the view the property has (Mt.Rainier, Olympic, Puget Sound, lake, river, creek, skyline), coded 0-4
-* **condition** - building condition relative to age and grade, coded 1-5 <a href="https://info.kingcounty.gov/assessor/esales/Glossary.aspx?type=r#b">(source)</a> 
-* **grade** - construction quality of improvements, coded 1-13 <a href="https://info.kingcounty.gov/assessor/esales/Glossary.aspx?type=r#b">(source)</a> 
+* **condition**<sup>(2)</sup> - building condition relative to age and grade, coded 1-5
+* **grade**<sup>(2)</sup> - construction quality of improvements, coded 1-13
 * **sqft_above** - floor area excluding basement
 * **sqft_basement** - floor area of the basement
 * **yr_built** - year built
@@ -41,9 +41,9 @@ Dataset<sup>(1)</sup> consists of 21,597 properties across 24 cities in King Cou
 Data analysis was performed to understand the relationshiop between variables.  Here are some of the interesting findings:
 
  - Properties built in 1905 and 1917 have the highest average condition. After the Wall Street Crash of 1929, the average condition and grade and the number of properties built dropped.
- - 78% of properties built from 2000 have above average (>7) grade in terms of contruction quality.  99% of these properties were in average (3) conditon.
+ - 78% of properties built from 2000 have above average (>7) grade in terms of contruction quality.  99% of these properties were in average (3) conditon only.
 - 16% of properties that were at least a century old at the time of acquisition were in above average (>3) condition and (>7) grade.
-- There are 176 duplicates in the dataset, these properties properties were resold within a year.  95% of these properties were resold at profit. None of them were upgraded or renovated. A worn-out property in Seattle was resold at 321% profit.
+- There are 176 duplicates in the dataset. These properties were resold within a year.  95% of which were resold at profit. None of them were upgraded or renovated. A worn-out property in Seattle was resold at 321% profit.
 - The most expensive houses are located in Seattle, Bellevue, Medina, Mercer Island and Kirkland.
 - There is one property with 33 bedrooms in a neighborhood where majority of the properties have 1-6 bedrooms only.
 - The features with the highest correlation with price are grade, sqft_living, sqft_living15 and lat.
@@ -64,7 +64,7 @@ All datapoints with z-score greater than 3 or less than -3 were removed from the
 
 A baseline model was created using all features which yielded an R<sup>2</sup> of 0.8728.  However, 9 features have p-values of greater than 0.05.
 
-Three techniques were used to select 3 features:
+Three techniques were then used to select 3 features:
 1. Highest correlation coefficient (multicollinearity removed)
 2. Recursive Feature Elimination (Scikit Learn)
 3. Select From Model (Scikit Learn)
@@ -77,20 +77,21 @@ Below table shows that the first technique gave the highest R<sup>2</sup>:
 |2|-186.4715 + 84.4719\*lat_log - 73.7738\*long_log + 61.8658\*yr_sold_log|0.2604|0.0313|
 |3|-4.1042 - 2.1174e14\*yr_built_log + 2.1174e14\*yr_renovated__log + 0.0\*renovated|-0.132|0.0479|
 
-
 Interactions and polynomial features (degree=2) were also introduced.  Again, the first feature selection technique works best:
 
-| ŷ(price_log) | R<sup>2</sup> | MSE |
+| ŷ(price_log) | Test R<sup>2</sup> | Test MSE |
 |------------------------------------------|--------------|--------------|
 |interaction: -114.9193 + 0.028 sqft_living_log\*grade + 21.6215 lat_log\*yr_sold_log + 0.0086 floors\*condition  |0.6610|0.0144|
 |polynomial: -55.054 + 0.0068 grade<sup>2</sup> + 21.4129 lat_log<sup>2</sup> + 0.0052 bedrooms<sup>2</sup>|0.6204|0.0161|
 
 ## Conclusion
-The best linear model explains 62% of the variation in price.  Adding interaction features, improved the score by 4%. Looking at the baseline model, score can still be improved with more features.  LASSO, Ridge and Elastic Net can then be used to regularised the model.
+The best linear model explains 62% of the variation in price (*price_log*).  *lat_log* has the biggest effect on *price_log*.
+
+Adding interaction features improved the score by 4%. It can still be further improved with more features.  LASSO, Ridge and Elastic Net can then be used to regularised the model.
 
 Also, the following can useful addition to the dataset as these are taken into considerations when appraising a property:
 - Market value per sqft. of lot and improvement per zipcode:  Prices change from one area to another.
-- Lot type: Premiums are added to the price depending on the location of the lot. 
+- Lot type: Premiums are added depending on the location of the lot. 
 - Retrictions and encumbrances on the land title: Limitations and threats to property ownership can reduce the property value.
 - More information about the neighborhoud:
    - Unemployment rate, average/median household income, crime rate, air quality 
@@ -107,7 +108,7 @@ Main notebook: <a href="https://github.com/valmadrid/KingCountryRealEstatePrices
 
 Functions: <a href="https://github.com/valmadrid/KingCountryRealEstatePrices-Mod1Project-/blob/master/functions.py">functions.py</a>
 
-## Contributor
+## Contributors
 <a href="https://www.linkedin.com/in/valmadrid/">Grace Valmadrid</a>
 
 Tom Ribaroff
@@ -118,4 +119,5 @@ Image by <a href="https://www.coldwellbanker.com">Coldwell Banker</a>
 
 ## Footnotes
 1 The dataset has been modified by our instructors for this project.
+2 https://info.kingcounty.gov/assessor/esales/Glossary.aspx?type=r#b
 
