@@ -41,6 +41,7 @@ Dataset<sup>(1)</sup> consists of 21,597 properties across 24 cities in King Cou
 Data analysis was performed to understand the relationshiop between variables.  Here are some of the interesting findings:
 
  - Properties built in 1905 and 1917 have the highest average condition. After the Wall Street Crash of 1929, the average condition and grade and the number of properties built dropped.
+ 
  - 78% of properties built from 2000 have above average (>7) grade in terms of contruction quality.  99% of these properties were in average (3) conditon only.
 - 16% of properties that were at least a century old at the time of acquisition were in above average (>3) condition and (>7) grade.
 - There are 176 duplicates in the dataset. These properties were resold within a year.  95% of which were resold at profit. None of them were upgraded or renovated. A worn-out property in Seattle was resold at 321% profit.
@@ -119,5 +120,6 @@ Image by <a href="https://www.coldwellbanker.com">Coldwell Banker</a>
 
 ## Footnotes
 1 The dataset has been modified by our instructors for this project.
+
 2 https://info.kingcounty.gov/assessor/esales/Glossary.aspx?type=r#b
 
