@@ -45,12 +45,13 @@ Data analysis was performed to understand the relationshiop between variables.  
 - 16% of properties that were at least a century old at the time of acquisition were in above average (>3) condition and (>7) grade.
 - There are 176 duplicates in the dataset, these properties properties were resold within a year.  95% of these properties were resold at profit. None of them were upgraded or renovated. A worn-out property in Seattle was resold at 321% profit.
 - The most expensive houses are located in Seattle, Bellevue, Medina, Mercer Island and Kirkland.
-- The features with the highest correlation with price are grade, sqft_living, sqft_living 15 and lat.
+- There is one property with 33 bedrooms in a neighborhood where majority of the properties have 1-6 bedrooms only.
+- The features with the highest correlation with price are grade, sqft_living, sqft_living15 and lat.
 
 ### Preprocessing
 
 **Missing Values**
-* waterfront - As this has a very weak correlation with price, missing values were defaulted to 0.
+* waterfront - As this has a very weak correlation with price, missing values (11%) were defaulted to 0.
 * view - Since only 0.2% is missing and correlation with price is weak, these were also defaulted to 0. 
 * sqft_basement - This was derived by getting the difference between sqft_living and sqft_above.
 * year_renovated - 97% of this column are zeroes and missing values.  It was assumed that the properties were not renovated.
@@ -77,7 +78,7 @@ Below table shows that the first technique gave the highest R<sup>2</sup>:
 |3|-4.1042 - 2.1174e14\*yr_built_log + 2.1174e14\*yr_renovated__log + 0.0\*renovated|-0.132|0.0479|
 
 
-Interactions and polynomial features were also introduced.  Again, the first feature selection technique works best:
+Interactions and polynomial features (degree=2) were also introduced.  Again, the first feature selection technique works best:
 
 | ŷ(price_log) | R<sup>2</sup> | MSE |
 |------------------------------------------|--------------|--------------|
@@ -85,6 +86,15 @@ Interactions and polynomial features were also introduced.  Again, the first fea
 |polynomial: -55.054 + 0.0068 grade<sup>2</sup> + 21.4129 lat_log<sup>2</sup> + 0.0052 bedrooms<sup>2</sup>|0.6204|0.0161|
 
 ## Conclusion
+The best linear model explains 62% of the variation in price.  Adding interaction features, improved the score by 4%. Looking at the baseline model, score can still be improved with more features.  LASSO, Ridge and Elastic Net can then be used to regularised the model.
+
+Also, the following can useful addition to the dataset as these are taken into considerations when appraising a property:
+- Market value per sqft. of lot and improvement per zipcode:  Prices change from one area to another.
+- Lot type: Premiums are added to the price depending on the location of the lot. 
+- Retrictions and encumbrances on the land title: Limitations and threats to property ownership can reduce the property value.
+- More information about the neighborhoud:
+   - Unemployment rate, average/median household income, crime rate, air quality 
+   - Proximity to church, schools, cemetary, shopping malls etc. 
 
 ## Important libraries used
 * Scikit Learn
@@ -93,24 +103,12 @@ Interactions and polynomial features were also introduced.  Again, the first fea
 
 ## Files
 
-**Market Value**
+Main notebook: <a href="https://github.com/valmadrid/KingCountryRealEstatePrices-Mod1Project-/blob/master/kchousing.ipynb">kchousing.ipynb</a>
 
-The average price per square foot of the 15 closest neighbours of lot and improvement, seperately. Prices per square foot change from one area to another and it would improve our model by subsetting over zipcodes that have similar values for these average square foots.
-
-**Lot Type**
-
-**Restrictions and Encumbrances**
-
-A categorical variable that will tell whether the property has a clean title. Buyer and real estate agents should be aware of the limitations and threats to property ownership. These will reduce the price and make it less marketable.
-
-**More information on location and neighborhood**
-
-* Unemployment rate, average/median household income, crime rate, air quality 
-* Distance to famous landmarks, lakes, rivers, mountains
-* Proximity to church, schools, cemetary, shopping malls etc. 
+Functions: <a href="https://github.com/valmadrid/KingCountryRealEstatePrices-Mod1Project-/blob/master/functions.py">functions.py</a>
 
 ## Contributor
-Grace Valmadrid
+<a href="https://www.linkedin.com/in/valmadrid/">Grace Valmadrid</a>
 
 Tom Ribaroff
 
