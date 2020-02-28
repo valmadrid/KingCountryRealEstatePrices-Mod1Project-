@@ -229,7 +229,7 @@ def run_sfm(model, X, y, max_features=3):
     """
     
     X_train, X_test, y_train, y_test = split(X, y)
-    selector = SelectFromModel(model, max_features=3)
+    selector = SelectFromModel(model, max_features=max_features)
     selector.fit(X_train, y_train)
     top_features = pd.DataFrame({"features": X.columns, "include": selector.get_support()}).sort_values("include", ascending=False)
     

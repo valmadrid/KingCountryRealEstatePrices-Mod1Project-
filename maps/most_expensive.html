@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ba1d25715347492aab93653619b27100 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ba1d25715347492aab93653619b27100" ></div>
+        
+</body>
+<script>    
+    
+            var map_ba1d25715347492aab93653619b27100 = L.map(
+                "map_ba1d25715347492aab93653619b27100",
+                {
+                    center: [47.6, -122.2],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9.2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4706568d60f7479e956d69e974d9005b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ba1d25715347492aab93653619b27100);
+        
+    
+            var circle_marker_17dada0fb6494f5bb31fb3d82028e12c = L.circleMarker(
+                [47.6298, -122.323],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.4, "stroke": true, "weight": 3}
+            ).addTo(map_ba1d25715347492aab93653619b27100);
+        
+    
+        var popup_9194fa8c50fc4e8db19cb2e8cd4ea94b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_654559b9fd594378849bfdaf0d43fc7d = $(`<div id="html_654559b9fd594378849bfdaf0d43fc7d" style="width: 100.0%; height: 100.0%;">{'id': 6762700020, 'zipcode': 98102, 'city': 'Seattle', 'lot area': 27600, 'floor area': 12050, 'price': 7700000.0}</div>`)[0];
+            popup_9194fa8c50fc4e8db19cb2e8cd4ea94b.setContent(html_654559b9fd594378849bfdaf0d43fc7d);
+        
+
+        circle_marker_17dada0fb6494f5bb31fb3d82028e12c.bindPopup(popup_9194fa8c50fc4e8db19cb2e8cd4ea94b)
+        ;
+
+        
+    
+    
+            var circle_marker_69127d3c4b8244a0ae8ac322d08a0d9c = L.circleMarker(
+                [47.65, -122.214],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.12, "stroke": true, "weight": 3}
+            ).addTo(map_ba1d25715347492aab93653619b27100);
+        
+    
+        var popup_4cfb87009c5d40338cbd959703954b49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82cebf132eb34b72bd517bd863fc3063 = $(`<div id="html_82cebf132eb34b72bd517bd863fc3063" style="width: 100.0%; height: 100.0%;">{'id': 9808700762, 'zipcode': 98004, 'city': 'Bellevue', 'lot area': 37325, 'floor area': 10040, 'price': 7060000.0}</div>`)[0];
+            popup_4cfb87009c5d40338cbd959703954b49.setContent(html_82cebf132eb34b72bd517bd863fc3063);
+        
+
+        circle_marker_69127d3c4b8244a0ae8ac322d08a0d9c.bindPopup(popup_4cfb87009c5d40338cbd959703954b49)
+        ;
+
+        
+    
+    
+            var circle_marker_fc10519c900d4758b27e7ff9bdff9be0 = L.circleMarker(
+                [47.6305, -122.24],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.78, "stroke": true, "weight": 3}
+            ).addTo(map_ba1d25715347492aab93653619b27100);
+        
+    
+        var popup_f6315c4c6c09421bab0db69fc6b45f7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_469ae97b9df443c9becef9ade77178dd = $(`<div id="html_469ae97b9df443c9becef9ade77178dd" style="width: 100.0%; height: 100.0%;">{'id': 9208900037, 'zipcode': 98039, 'city': 'Medina', 'lot area': 31374, 'floor area': 9890, 'price': 6890000.0}</div>`)[0];
+            popup_f6315c4c6c09421bab0db69fc6b45f7b.setContent(html_469ae97b9df443c9becef9ade77178dd);
+        
+
+        circle_marker_fc10519c900d4758b27e7ff9bdff9be0.bindPopup(popup_f6315c4c6c09421bab0db69fc6b45f7b)
+        ;
+
+        
+    
+    
+            var circle_marker_3a85aa3f5e5d40779c985c0e66cee24c = L.circleMarker(
+                [47.6289, -122.23299999999999],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.14, "stroke": true, "weight": 3}
+            ).addTo(map_ba1d25715347492aab93653619b27100);
+        
+    
+        var popup_d56e8ff6dfef40408f4f02511313cd62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51862369b70046ad9cd4b7fcc2eedbdf = $(`<div id="html_51862369b70046ad9cd4b7fcc2eedbdf" style="width: 100.0%; height: 100.0%;">{'id': 2470100110, 'zipcode': 98039, 'city': 'Medina', 'lot area': 35069, 'floor area': 9200, 'price': 5570000.0}</div>`)[0];
+            popup_d56e8ff6dfef40408f4f02511313cd62.setContent(html_51862369b70046ad9cd4b7fcc2eedbdf);
+        
+
+        circle_marker_3a85aa3f5e5d40779c985c0e66cee24c.bindPopup(popup_d56e8ff6dfef40408f4f02511313cd62)
+        ;
+
+        
+    
+    
+            var circle_marker_7b0ba3b85a2345749ccbc9c6c90dfb26 = L.circleMarker(
+                [47.6232, -122.22],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.7, "stroke": true, "weight": 3}
+            ).addTo(map_ba1d25715347492aab93653619b27100);
+        
+    
+        var popup_662f73ab25d74f3698619085b0c45d65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_407b8f41b92d4e1580ff60ae6379ada4 = $(`<div id="html_407b8f41b92d4e1580ff60ae6379ada4" style="width: 100.0%; height: 100.0%;">{'id': 8907500070, 'zipcode': 98004, 'city': 'Bellevue', 'lot area': 23985, 'floor area': 8000, 'price': 5350000.0}</div>`)[0];
+            popup_662f73ab25d74f3698619085b0c45d65.setContent(html_407b8f41b92d4e1580ff60ae6379ada4);
+        
+
+        circle_marker_7b0ba3b85a2345749ccbc9c6c90dfb26.bindPopup(popup_662f73ab25d74f3698619085b0c45d65)
+        ;
+
+        
+    
+    
+            var circle_marker_4493bb9d2c3f48c185fa6a8baf558804 = L.circleMarker(
+                [47.5631, -122.21],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.6, "stroke": true, "weight": 3}
+            ).addTo(map_ba1d25715347492aab93653619b27100);
+        
+    
+        var popup_00a76f5767a94c289b4252723419513b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e629a261465640abbfc34f915a4ca8cb = $(`<div id="html_e629a261465640abbfc34f915a4ca8cb" style="width: 100.0%; height: 100.0%;">{'id': 7558700030, 'zipcode': 98040, 'city': 'Mercer Island', 'lot area': 24829, 'floor area': 7390, 'price': 5300000.0}</div>`)[0];
+            popup_00a76f5767a94c289b4252723419513b.setContent(html_e629a261465640abbfc34f915a4ca8cb);
+        
+
+        circle_marker_4493bb9d2c3f48c185fa6a8baf558804.bindPopup(popup_00a76f5767a94c289b4252723419513b)
+        ;
+
+        
+    
+    
+            var circle_marker_1ba558861380467a850639bae200e1e8 = L.circleMarker(
+                [47.6767, -122.211],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.22, "stroke": true, "weight": 3}
+            ).addTo(map_ba1d25715347492aab93653619b27100);
+        
+    
+        var popup_294de43844da49bbb83fa7ebd701a577 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c9aac576f5e44298cbc719eb6a47bdd = $(`<div id="html_6c9aac576f5e44298cbc719eb6a47bdd" style="width: 100.0%; height: 100.0%;">{'id': 1247600105, 'zipcode': 98033, 'city': 'Kirkland', 'lot area': 45517, 'floor area': 8010, 'price': 5110000.0}</div>`)[0];
+            popup_294de43844da49bbb83fa7ebd701a577.setContent(html_6c9aac576f5e44298cbc719eb6a47bdd);
+        
+
+        circle_marker_1ba558861380467a850639bae200e1e8.bindPopup(popup_294de43844da49bbb83fa7ebd701a577)
+        ;
+
+        
+    
+    
+            var circle_marker_dc2a79ad98ef46729c6a7f48202a8dc7 = L.circleMarker(
+                [47.556999999999995, -122.21],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.34, "stroke": true, "weight": 3}
+            ).addTo(map_ba1d25715347492aab93653619b27100);
+        
+    
+        var popup_ee336877a89d4f38a5329b2b295f501d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac2a3fa988e94bc4978d4139bafa4baf = $(`<div id="html_ac2a3fa988e94bc4978d4139bafa4baf" style="width: 100.0%; height: 100.0%;">{'id': 1924059029, 'zipcode': 98040, 'city': 'Mercer Island', 'lot area': 13068, 'floor area': 9640, 'price': 4670000.0}</div>`)[0];
+            popup_ee336877a89d4f38a5329b2b295f501d.setContent(html_ac2a3fa988e94bc4978d4139bafa4baf);
+        
+
+        circle_marker_dc2a79ad98ef46729c6a7f48202a8dc7.bindPopup(popup_ee336877a89d4f38a5329b2b295f501d)
+        ;
+
+        
+    
+    
+            var circle_marker_2e40eabbe0b2400e9dfad5b5857167ec = L.circleMarker(
+                [47.7493, -122.28],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.0, "stroke": true, "weight": 3}
+            ).addTo(map_ba1d25715347492aab93653619b27100);
+        
+    
+        var popup_89e4ef9eb2084fd99956af11c5101eeb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed5ddc2c773b47659d038ab294b4608d = $(`<div id="html_ed5ddc2c773b47659d038ab294b4608d" style="width: 100.0%; height: 100.0%;">{'id': 7738500731, 'zipcode': 98155, 'city': 'Seattle', 'lot area': 40014, 'floor area': 6640, 'price': 4500000.0}</div>`)[0];
+            popup_89e4ef9eb2084fd99956af11c5101eeb.setContent(html_ed5ddc2c773b47659d038ab294b4608d);
+        
+
+        circle_marker_2e40eabbe0b2400e9dfad5b5857167ec.bindPopup(popup_89e4ef9eb2084fd99956af11c5101eeb)
+        ;
+
+        
+    
+    
+            var circle_marker_246a401d09bf48b39013dc14ebc41c5f = L.circleMarker(
+                [47.6208, -122.219],
+                {"bubblingMouseEvents": true, "color": "b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.98, "stroke": true, "weight": 3}
+            ).addTo(map_ba1d25715347492aab93653619b27100);
+        
+    
+        var popup_3c6ef956732d4f12b0b1208f2609292c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d63bf0526b1499d983eade8439d8feb = $(`<div id="html_5d63bf0526b1499d983eade8439d8feb" style="width: 100.0%; height: 100.0%;">{'id': 3835500195, 'zipcode': 98004, 'city': 'Bellevue', 'lot area': 27517, 'floor area': 6430, 'price': 4490000.0}</div>`)[0];
+            popup_3c6ef956732d4f12b0b1208f2609292c.setContent(html_5d63bf0526b1499d983eade8439d8feb);
+        
+
+        circle_marker_246a401d09bf48b39013dc14ebc41c5f.bindPopup(popup_3c6ef956732d4f12b0b1208f2609292c)
+        ;
+
+        
+    
+</script>
