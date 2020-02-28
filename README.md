@@ -42,13 +42,31 @@ Data analysis was performed to understand the relationshiop between variables.  
 
  - Properties built in 1905 and 1917 have the highest average condition. After the Wall Street Crash of 1929, the average condition and grade and the number of properties built dropped.
  - 78% of properties built from 2000 have above average (>7) grade in terms of contruction quality.  99% of these properties were in average (3) conditon only.
+ 
+<center><img src="https://github.com/valmadrid/KingCountryRealEstatePrices-Mod1Project-/blob/master/images/condition.png"/></center>
+ 
 - 16% of properties that were at least a century old at the time of acquisition were in above average (>3) condition and (>7) grade.
+
+<center><img src="https://github.com/valmadrid/KingCountryRealEstatePrices-Mod1Project-/blob/master/images/100.png"/></center>
+
+
 - 176 properties were resold within a year.  
    - 95% of which were resold at profit. None of them were upgraded or renovated.
    - A worn-out property in Seattle was resold at 321% profit.
+   
+<center><img src="https://github.com/valmadrid/KingCountryRealEstatePrices-Mod1Project-/blob/master/images/resell.png"/></center>
+ 
 - The most expensive houses are located in Seattle, Bellevue, Medina, Mercer Island and Kirkland.
+
+<center><img src="https://github.com/valmadrid/KingCountryRealEstatePrices-Mod1Project-/blob/master/images/expensive.png"/></center>
+
 - There is one property with 33 bedrooms in a neighborhood where majority of the properties have 1-6 bedrooms only.
-- The features with the highest correlation with price are grade, sqft_living, sqft_living15 and lat.
+
+<center><img src="https://github.com/valmadrid/KingCountryRealEstatePrices-Mod1Project-/blob/master/images/33.png"/></center>
+
+- The features with the highest correlation with price are grade, sqft_living_log, sqft_living15_log and lat_log.
+
+<center><img src="https://github.com/valmadrid/KingCountryRealEstatePrices-Mod1Project-/blob/master/images/corr.png"/></center>
 
 ### Preprocessing
 
