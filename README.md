@@ -7,7 +7,7 @@ Status: WIP
 
 ## Objective 
 
-The main goal of this project is to build a regression model to predict the price of the King County properties.  Final model should have at most 3 features with p-values < 0.05.
+The main goal of this project is to build a regression model to predict the price of the King County properties.  Final model should have at most 3 features with p-values less than 0.05. 
 
 ## Dataset
 
@@ -52,18 +52,28 @@ Data analysis was performed to understand the relationshiop between variables.  
 **Missing Values**
 * view - Upon checking the King County website for a handful of properties, values for these features are indeed missing. Since there is only 0.2% missing values, these were defaulted to 0.
 * waterfront - Similar to view, these values are missing on the website too.  11% of this column were defaulted to 0 (no waterfront access right).
-* sqft_basement - This was derived by getting the different between sqft_living and sqft_above.
+* sqft_basement - This was derived by getting the difference between sqft_living and sqft_above.
 * year_renovated - 97% of this column are zeroes and missing values.  It was assumed that the properties were not renovated.
 
 **Outliers**
-Z-score was use to tackle outliers.  All datapoints with absolute z-score of more than 3 were removed from the dataset.
+
+All datapoints with z-score greater than 3 or less than -3 were removed from the dataset.
 
 ### Modeling
+
+A baseline model was created using all features which yielded an R<sup>2</sup> of 0.8728.  However, 9 features have p-values of greater than 0.05.
 
 Three techniques were used to select 3 features:
 1. Highest correlation coefficient (multicollinearity removed)
 2. Recursive Feature Elimination (Scikit Learn)
 3. Select From Model (Scikit Learn)
+
+|Technique| ŷ(price_log) | Test R<sup>2</sup> | Test MSE |
+|---------|------------------------------------------|--------------|--------------|
+|1|-116.1136 + 0.1081\*grade + 72.0351\*lat_log + 0.0352\*bedrooms|0.6218|0.0160|
+|2|-186.4715 + 84.4719\*lat_log - 73.7738\*long_log + 61.8658\*yr_sold_log|0.2604|0.0313|
+|3|-4.1042 - 2.1174e14\*yr_built_log + 2.1174e14\*yr_renovated__log + 0.0\*renovated|-0.132|0.0479|
+
 
 Interactions and polynomial features were also introduced.
 
@@ -73,14 +83,14 @@ Interactions and polynomial features were also introduced.
 |interaction: sqft_living_log\*grade, lat_log\*yr_sold_log, floors\*condition|0.6610|0.0144|
 |polynomial: grade<sup>2</sup>, lat_log<sup>2</sup>, bedrooms<sup>2</sup>|0.6204|0.0161|
 
+## Conclusion
+
 ## Important libraries used
 * Scikit Learn
 * Statsmodels
 * Folium
 
 ## Files
-
-## Conclusion
 
 **Market Value**
 
