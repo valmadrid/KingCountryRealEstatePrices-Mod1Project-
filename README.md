@@ -50,8 +50,8 @@ Data analysis was performed to understand the relationshiop between variables.  
 ### Preprocessing
 
 **Missing Values**
-* view - Upon checking the King County website for a handful of properties, values for these features are indeed missing. Since there is only 0.2% missing values, these were defaulted to 0.
-* waterfront - Similar to view, these values are missing on the website too.  11% of this column were defaulted to 0 (no waterfront access right).
+* waterfront - As this has a very weak correlation with price, missing values were defaulted to 0.
+* view - Since only 0.2% is missing and correlation with price is weak, these were also defaulted to 0. 
 * sqft_basement - This was derived by getting the difference between sqft_living and sqft_above.
 * year_renovated - 97% of this column are zeroes and missing values.  It was assumed that the properties were not renovated.
 
@@ -68,6 +68,8 @@ Three techniques were used to select 3 features:
 2. Recursive Feature Elimination (Scikit Learn)
 3. Select From Model (Scikit Learn)
 
+Below table shows that the first technique gave the highest R<sup>2</sup>:
+
 |Technique| ŷ(price_log) | Test R<sup>2</sup> | Test MSE |
 |---------|------------------------------------------|--------------|--------------|
 |1|-116.1136 + 0.1081\*grade + 72.0351\*lat_log + 0.0352\*bedrooms|0.6218|0.0160|
@@ -75,13 +77,12 @@ Three techniques were used to select 3 features:
 |3|-4.1042 - 2.1174e14\*yr_built_log + 2.1174e14\*yr_renovated__log + 0.0\*renovated|-0.132|0.0479|
 
 
-Interactions and polynomial features were also introduced.
+Interactions and polynomial features were also introduced.  Again, the first feature selection technique works best:
 
-| Features | R<sup>2</sup> | MSE |
+| ŷ(price_log) | R<sup>2</sup> | MSE |
 |------------------------------------------|--------------|--------------|
-|linear: grade, lat_log, bedrooms|0.6218|0.0160|
-|interaction: sqft_living_log\*grade, lat_log\*yr_sold_log, floors\*condition|0.6610|0.0144|
-|polynomial: grade<sup>2</sup>, lat_log<sup>2</sup>, bedrooms<sup>2</sup>|0.6204|0.0161|
+|interaction: -114.9193 + 0.028 sqft_living_log\*grade + 21.6215 lat_log\*yr_sold_log + 0.0086 floors\*condition  |0.6610|0.0144|
+|polynomial: -55.054 + 0.0068 grade<sup>2</sup> + 21.4129 lat_log<sup>2</sup> + 0.0052 bedrooms<sup>2</sup>|0.6204|0.0161|
 
 ## Conclusion
 
