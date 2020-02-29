@@ -65,15 +65,15 @@ Data analysis was performed to understand the relationshiop between variables.  
 
 ### Preprocessing
 
-**Missing Values**
+**Missing Values**:
 * waterfront - As this has a very weak correlation with price, missing values (11%) were defaulted to 0.
 * view - Since only 0.2% is missing and correlation with price is weak, these were also defaulted to 0. 
 * sqft_basement - This was derived by getting the difference between sqft_living and sqft_above.
 * year_renovated - 97% of this column are zeroes and missing values.  It was assumed that the properties were not renovated.
 
-**Outliers**
+**Outliers**:  All datapoints with z-score greater than 3 or less than -3 were removed from the dataset.
 
-All datapoints with z-score greater than 3 or less than -3 were removed from the dataset.
+**Continuous Features**: Log transformation was used to normalise these features.
 
 ### Modeling
 
@@ -100,9 +100,9 @@ Interactions and polynomial features (degree=2) were also introduced.  Again, th
 |polynomial: -55.054 + 0.0068 grade<sup>2</sup> + 21.4129 lat_log<sup>2</sup> + 0.0052 bedrooms<sup>2</sup>|0.6204|0.0161|
 
 ## Conclusion
-The best linear model explains 62% of the variation in price (*price_log*).  *lat_log* has the biggest effect on *price_log*.
+The best linear model explains 62% of the variation in price (*price_log*).  Feature *lat_log* has the biggest effect on *price_log*.  The addition of interaction features improved the score by 4%. 
 
-Adding interaction features improved the score by 4%. It can still be further improved with more features.  LASSO, Ridge and Elastic Net can then be used to regularised the model.
+Model can still be further improved by adding more features then applying LASSO, Ridge and Elastic Net regression techniques.
 
 Also, the following can useful addition to the dataset as these are taken into considerations when appraising a property:
 - Market value per sqft. of lot and improvement per zipcode:  Prices change from one area to another.
@@ -126,7 +126,7 @@ Functions: <a href="https://github.com/valmadrid/KingCountryRealEstatePrices-Mod
 ## Contributors
 <a href="https://www.linkedin.com/in/valmadrid/">Grace Valmadrid</a>
 
-Tom Ribaroff
+<a href="https://github.com/tomribaroff">Tom Ribaroff</a>
 
 ## Credit
 
