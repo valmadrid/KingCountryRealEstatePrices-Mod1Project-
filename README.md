@@ -59,7 +59,7 @@ Data analysis was performed to understand the relationshiop between variables.  
 
 <center><img src="https://github.com/valmadrid/KingCountryRealEstatePrices-Mod1Project-/blob/master/images/33.png"/></center>
 
-- The features with the highest correlation with price are grade, sqft_living_log, sqft_living15_log and lat_log.
+- The features with strong correlation with price are grade, sqft_living_log, sqft_living15_log and lat_log.
 
 <center><img src="https://github.com/valmadrid/KingCountryRealEstatePrices-Mod1Project-/blob/master/images/corr.png"/></center>
 
