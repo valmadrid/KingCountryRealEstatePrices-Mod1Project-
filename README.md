@@ -44,11 +44,6 @@ Data analysis was performed to understand the relationshiop between variables.  
  - 78% of properties built from 2000 have above average (>7) grade in terms of contruction quality.  99% of these properties were in average (3) conditon only.
  
 <center><img src="https://github.com/valmadrid/KingCountryRealEstatePrices-Mod1Project-/blob/master/images/condition.png"/></center>
- 
-- 16% of properties that were at least a century old at the time of acquisition were in above average (>3) condition and (>7) grade.
-
-<center><img src="https://github.com/valmadrid/KingCountryRealEstatePrices-Mod1Project-/blob/master/images/100.png"/></center>
-
 
 - 176 properties were resold within a year.  
    - 95% of which were resold at profit. None of them were upgraded or renovated.
